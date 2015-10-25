@@ -21,7 +21,7 @@ SETTING UP YOUR ENVIRONMENT:
 10. Run the following command:
 	git clone -b dev https://github.com/aakashpatel1/ChoreoProSite.git
 11. Now run the following URL in your web browser:
-	http://127.0.0.1:4567/www/ChoreoProSite
+	http://127.0.0.1:4567/ChoreoProSite
 12. You will get a confirmation that you have successfully configured your dev Environment. Happy coding!
 	
 	
