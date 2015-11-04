@@ -1,6 +1,6 @@
-function getHomeText() {
-    return 'This is the Home Page! Please Enter Text Here!';
-}
+
+
+
 
 angular.module('myApp.home', ['ngRoute'])
 
@@ -11,8 +11,10 @@ angular.module('myApp.home', ['ngRoute'])
         });
     }])
 
-.controller('homeCtrl', function($scope) {
 
-    // create a message to display in our view
-    $scope.homeText = getHomeText();
+.controller('homeCtrl', function($scope, $http) {
+    $http.get("home/home.json")
+        .success(function (response) {
+            $scope.homePageText = response.homeText;
+        });
 });

@@ -1,4 +1,3 @@
-'use strict';
 
 angular.module('myApp.schedule', ['ngRoute'])
 
@@ -9,6 +8,6 @@ angular.module('myApp.schedule', ['ngRoute'])
   });
 }])
 
-.controller('scheduleCtrl', [function() {
-
-}]);
+    .controller('scheduleCtrl', function($scope, $http) {
+        $scope.comingSoon = "Coming Soon!";
+    });

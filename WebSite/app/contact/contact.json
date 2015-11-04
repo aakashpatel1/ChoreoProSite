@@ -1,0 +1,16 @@
+{
+  "contactInfo": [
+    {
+      "contactType": "Email",
+      "contactValue": "patela@smu.edu"
+    },
+    {
+      "contactType": "Phone",
+      "contactValue": "214-850-7223"
+    },
+    {
+      "contactType": "Address",
+      "contactValue": "2744 Summertree Dr. Dallas, TX 75006"
+    }
+  ]
+}

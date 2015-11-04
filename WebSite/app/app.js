@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.home',
-  'myApp.about',
+  'myApp.contact',
   'myApp.choreographer',
   'myApp.schedule',
   'myApp.version'
