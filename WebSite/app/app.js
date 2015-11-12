@@ -7,7 +7,7 @@ angular.module('myApp', [
   'myApp.contact',
   'myApp.choreographer',
   'myApp.schedule',
-  'myApp.version'
+  'myApp.version',
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
