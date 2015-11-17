@@ -1,0 +1,19 @@
+{
+  "choreographers": [
+                      {
+                        "firstName": "Johny",
+                        "lastName": "Boy",
+                        "bio": "I don't dance well, but I can spell like hell."
+                      },
+                      {
+                        "firstName": "Jessica Simpson",
+                        "lastName": "Doe",
+                        "bio": "Eye danz reel wel butt don no hoe to spel"
+                      },
+                      {
+                        "firstName": "Donald",
+                        "lastName": "Trump",
+                        "bio": "i cant danse ore spell 4 meye lyfe"
+                      }
+                    ]
+}

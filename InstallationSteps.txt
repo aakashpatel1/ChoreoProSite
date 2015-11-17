@@ -1,0 +1,28 @@
+SETTING UP YOUR ENVIRONMENT:
+===========================
+1. Download VirtualBox and Vagrant from the following URLs:
+	https://www.vagrantup.com/downloads.html
+	https://www.virtualbox.org/wiki/Downloads
+2. Create a folder and name it "ChoreoProDev." You can put this folder anywhere you like. 
+3. Add the Vagrantfile and shell script to this folder.
+4. Inside the ChoreoProDev folder, create two more folders named "www" and "data."
+5. Now open your command prompt and navigate to the ChoreoProDev Directory. Enter the following command:
+	vagrant up
+6. After this is complete, run the following command:
+	vagrant ssh
+7. If that command does not work, try running the following:
+	set PATH=%PATH%;C:\Program Files (x86)\Git\bin
+8. Once the vagrant ssh command is working, run the following commands:
+	sudo apt-get install lamp-server^
+	sudo apt-get install git
+9. Navigate to /var/www
+10. Run the following command:
+	git clone -b dev https://github.com/aakashpatel1/ChoreoProSite.git
+11. Now run the following URL in your web browser:
+	http://127.0.0.1:4567/ChoreoProSite
+12. You will get a confirmation that you have successfully configured your dev environment. Happy coding!
+	
+	
+
+
+	
