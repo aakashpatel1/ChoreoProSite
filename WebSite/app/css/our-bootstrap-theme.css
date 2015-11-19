@@ -40,7 +40,7 @@ template {
   display: none; }
 
 a {
-  background-color: transparent; }
+  background-image: #gradient >.vertical(#4F364C, #FFFFFF); }
 
 a:active,
 a:hover {

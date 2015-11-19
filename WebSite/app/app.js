@@ -7,6 +7,8 @@ angular.module('myApp', [
   'myApp.contact',
   'myApp.choreographer',
   'myApp.schedule',
+  'myApp.schedule2',
+  'myApp.scheduled',
   'myApp.version',
 ]).
 config(['$routeProvider', function($routeProvider) {
