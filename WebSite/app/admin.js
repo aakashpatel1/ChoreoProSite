@@ -1,14 +1,13 @@
 var myAdmin = angular.module('myAdmin', ['ng-admin']);
 
 myAdmin.config(['NgAdminConfigurationProvider', function (nga) {
-    var admin = nga.application('My First Admin')
+    var admin = nga.application('Welcome, Admin!')
         .baseApiUrl('http://jsonplaceholder.typicode.com/'); // main API endpoint
 
     var user = nga.entity('users'); // the API endpoint for users will be 'http://jsonplaceholder.typicode.com/users/:id
     user.listView()
         .fields([
             nga.field('name').isDetailLink(true),
-            nga.field('username'),
             nga.field('email')
         ])
     user.creationView().fields([
@@ -44,11 +43,7 @@ myAdmin.config(['NgAdminConfigurationProvider', function (nga) {
                 .map(function truncate(value) {
                     if (!value) return '';
                     return value.length > 50 ? value.substr(0, 50) + '...' : value;
-                }),
-            nga.field('userId', 'reference')
-                .targetEntity(user)
-                .targetField(nga.field('username'))
-                .label('Author')
+                })
         ])
         .listActions(['show'])
         .batchActions([])
@@ -56,28 +51,11 @@ myAdmin.config(['NgAdminConfigurationProvider', function (nga) {
             nga.field('q')
                 .label('')
                 .pinned(true)
-                .template('<div class="input-group"><input type="text" ng-model="value" placeholder="Search" class="form-control"></input><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div>'),
-            nga.field('userId', 'reference')
-                .targetEntity(user)
-                .targetField(nga.field('username'))
-                .label('User')
+                .template('<div class="input-group"><input type="text" ng-model="value" placeholder="Search" class="form-control"></input><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div>')
         ]);
     post.showView().fields([
         nga.field('title'),
         nga.field('body', 'text'),
-        nga.field('userId', 'reference')
-            .targetEntity(user)
-            .targetField(nga.field('username'))
-            .label('User'),
-        nga.field('comments', 'referenced_list')
-            .targetEntity(nga.entity('comments'))
-            .targetReferenceField('postId')
-            .targetFields([
-                nga.field('email'),
-                nga.field('name')
-            ])
-            .sortField('id')
-            .sortDir('DESC'),
     ]);
     admin.addEntity(post)
 

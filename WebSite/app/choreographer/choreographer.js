@@ -6,10 +6,14 @@ angular.module('myApp.choreographer', ['ngRoute'])
     controller: 'choreographerCtrl'
   });
 }])
-
-    .controller('choreographerCtrl', function($scope, $http) {
-        $http.get("choreographer/choreographer.json")
-            .success(function (response) {
-                $scope.choreographers = response.choreographers;
-            });
+.factory('choreographerService', function($resource) {
+    return $resource('http://localhost:5000/choreographer/api/v1.0/choreographers');
+})
+.controller('choreographerCtrl', function($scope, choreographerService) {
+        var choreographers = choreographerService.query(function() {
+            console.log(choreographers);
+        }); //query() returns all the entries
     });
+
+
+

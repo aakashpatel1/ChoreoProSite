@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'angular-resource' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'angular-resource', null ]
+7 verbose cache add name=undefined spec="angular-resource" args=["angular-resource",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'angular-resource',
+8 verbose parsed url   path: 'angular-resource',
+8 verbose parsed url   href: 'angular-resource' }
+9 silly lockFile 1a91cce6-angular-resource angular-resource
+10 verbose lock angular-resource /home/vagrant/.npm/1a91cce6-angular-resource.lock
+11 silly lockFile 1a91cce6-angular-resource angular-resource
+12 silly lockFile 1a91cce6-angular-resource angular-resource
+13 verbose addNamed [ 'angular-resource', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 4929dad5-angular-resource angular-resource@
+16 verbose lock angular-resource@ /home/vagrant/.npm/4929dad5-angular-resource.lock
+17 silly addNameRange { name: 'angular-resource', range: '*', hasData: false }
+18 verbose request where is /angular-resource
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id f14f06d905bf591c
+21 verbose url raw /angular-resource
+22 verbose url resolving [ 'https://registry.npmjs.org/', './angular-resource' ]
+23 verbose url resolved https://registry.npmjs.org/angular-resource
+24 verbose request where is https://registry.npmjs.org/angular-resource
+25 info trying registry request attempt 1 at 19:15:32
+26 http GET https://registry.npmjs.org/angular-resource
+27 info retry will retry, error on last attempt: Error: getaddrinfo ESRCH
+28 info trying registry request attempt 2 at 19:16:22
+29 http GET https://registry.npmjs.org/angular-resource
+30 info retry will retry, error on last attempt: Error: getaddrinfo ESRCH
+31 info trying registry request attempt 3 at 19:18:02
+32 http GET https://registry.npmjs.org/angular-resource
+33 silly lockFile 4929dad5-angular-resource angular-resource@
+34 silly lockFile 4929dad5-angular-resource angular-resource@
+35 error Error: getaddrinfo ESRCH
+35 error     at errnoException (dns.js:37:11)
+35 error     at Object.onanswer [as oncomplete] (dns.js:124:16)
+36 error If you need help, you may report this *entire* log,
+36 error including the npm and node versions, at:
+36 error     <http://github.com/npm/npm/issues>
+37 error System Linux 3.2.0-23-generic-pae
+38 error command "/usr/bin/node" "/usr/bin/npm" "install" "angular-resource"
+39 error cwd /var/www/ChoreoProSite/WebSite/app/bower_components
+40 error node -v v0.10.40
+41 error npm -v 1.4.28
+42 error syscall getaddrinfo
+43 error code ESRCH
+44 error errno ESRCH
+45 verbose exit [ 1, true ]
