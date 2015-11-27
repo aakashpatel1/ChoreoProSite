@@ -38,12 +38,36 @@
 		<h4>Level 1 : <small> $1000/team </small></h4>
 		<h4>Level 3 : <small> $3000/team </small></h4>
 		<h4>Level 4 : <small> $4000/team </small></h4>
-		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  		View Calendar
-		</button>
+
+	<div class = "container">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  			View Calendar
+			</button>
+
+			<!-- Modal -->
+  		<div class="modal fade" id="myModal" role="dialog">
+   			 <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      			<div class="modal-content">
+        			<div class="modal-header">
+          				<button type="button" class="close" data-dismiss="modal">&times;</button>
+          				<h4 class="modal-title">Calendar</h4>
+        			</div>
+        			<div class="modal-body">
+          				<p>here the calendar</p>
+        			</div>
+        			<div class="modal-footer">
+          				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        			</div>
+     			 </div>
+      		</div>
+  		</div>
+
+		</div>	
 	</div>
 </div> 
-
+  
 </body>
 
 <div ng-repeat="choreographer in choreographers">
