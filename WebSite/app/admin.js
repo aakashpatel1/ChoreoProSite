@@ -1,97 +1,77 @@
-var myAdmin = angular.module('myAdmin', ['ng-admin']);
-
-myAdmin.config(['NgAdminConfigurationProvider', function (nga) {
-    var admin = nga.application('Welcome, Admin!')
-        .baseApiUrl('http://jsonplaceholder.typicode.com/'); // main API endpoint
-
-    var user = nga.entity('users'); // the API endpoint for users will be 'http://jsonplaceholder.typicode.com/users/:id
-    user.listView()
-        .fields([
-            nga.field('name').isDetailLink(true),
-            nga.field('email')
-        ])
-    user.creationView().fields([
-        nga.field('name')
-            .validation({ required: true, minlength: 3, maxlength: 100 }),
-        nga.field('username')
-            .attributes({ placeholder: 'No space allowed, 5 chars min' })
-            .validation({ required: true, pattern: '[A-Za-z0-9\.\-_]{5,20}' }),
-        nga.field('email', 'email')
-            .validation({ required: true }),
-        nga.field('address.street')
-            .label('Street'),
-        nga.field('address.city')
-            .label('City'),
-        nga.field('address.zipcode')
-            .label('Zipcode')
-            .validation({ pattern: '[A-Z\-0-9]{5,10}' }),
-        nga.field('phone'),
-        nga.field('website')
-            .validation({ validator: function(value) {
-                if (value.indexOf('http://') !== 0) throw new Error ('Invalid url in website');
-            } })
+var myApp = angular.module('myApp', ['ng-admin']);
+myApp.config(['NgAdminConfigurationProvider', function (nga) {
+    // create an admin application
+    var admin = nga.application('My First Admin')
+        .baseApiUrl('http://192.168.0.132:8080/'); // main API endpoint
+    // create a choreographer entity
+    var choreographers = nga.entity('choreographers');
+    choreographers.listView().fields([
+        // use the name as the link to the detail view - the edition view
+        nga.field('name').isDetailLink(true),
+        nga.field('bio')
     ]);
-    user.editionView().fields(user.creationView().fields());
-    admin.addEntity(user)
-
-    var post = nga.entity('posts'); // the API endpoint for users will be 'http://jsonplaceholder.typicode.com/users/:id
-    post.readOnly();
-    post.listView()
-        .fields([
-            nga.field('title').isDetailLink(true),
-            nga.field('body', 'text')
-                .map(function truncate(value) {
-                    if (!value) return '';
-                    return value.length > 50 ? value.substr(0, 50) + '...' : value;
-                })
-        ])
-        .listActions(['show'])
-        .batchActions([])
-        .filters([
-            nga.field('q')
-                .label('')
-                .pinned(true)
-                .template('<div class="input-group"><input type="text" ng-model="value" placeholder="Search" class="form-control"></input><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div>')
-        ]);
-    post.showView().fields([
-        nga.field('title'),
-        nga.field('body', 'text'),
+    choreographers.creationView().fields([
+        nga.field('name'),
+        nga.field('bio')
     ]);
-    admin.addEntity(post)
+    // use the same fields for the editionView as for the creationView
+    choreographers.editionView().fields(choreographers.creationView().fields());
+    admin.addEntity(choreographers)
+    var pages = nga.entity('pages').identifier(nga.field('PageID'));
+    pages.listView().fields([
+        // use the name as the link to the detail view - the edition view
+        nga.field('PageName').isDetailLink(true)
+    ]);
+    var pageAttributes = nga.entity('pageAttributes').identifier(nga.field('AttributeID'));
+    admin.addEntity(pageAttributes);
+    pages.showView().fields([
+        nga.field('PageName'),
+        nga.field('pageAttributes', 'referenced_list')
+            .targetEntity(pageAttributes)
+            .targetReferenceField(nga.field('PageID'))
+            .targetFields([
+                nga.field('PageID'),
+                nga.field('AttributeName'),
+                nga.field('AttributeText')
+            ])
+    ]);
 
-    admin.menu(nga.menu()
-            .addChild(nga.menu(user).icon('<span class="glyphicon glyphicon-user"></span>'))
-            .addChild(nga.menu(post).icon('<span class="glyphicon glyphicon-pencil"></span>'))
-    );
+    pages.editionView().fields([
+        nga.field('pageAttributes', 'referenced_list')
+            .targetEntity(pageAttributes)
+            .targetReferenceField(nga.field('PageID'))
+            .targetFields([
+                nga.field('PageID'),
+                nga.field('AttributeName'),
+                nga.field('AttributeText')
+            ])
+    ]);
 
+    admin.addEntity(pages);
+    // attach the admin application to the DOM and execute it
     nga.configure(admin);
 }]);
 
-myAdmin.config(['RestangularProvider', function (RestangularProvider) {
-    RestangularProvider.addFullRequestInterceptor(function(element, operation, what, url, headers, params) {
-        if (operation == "getList") {
-            // custom pagination params
-            if (params._page) {
-                params._start = (params._page - 1) * params._perPage;
-                params._end = params._page * params._perPage;
-            }
-            delete params._page;
-            delete params._perPage;
-            // custom sort params
-            if (params._sortField) {
-                params._sort = params._sortField;
-                params._order = params._sortDir;
-                delete params._sortField;
-                delete params._sortDir;
-            }
-            // custom filters
-            if (params._filters) {
-                for (var filter in params._filters) {
-                    params[filter] = params._filters[filter];
-                }
-                delete params._filters;
-            }
-        }
-        return { params: params };
+myApp.config(['RestangularProvider', function(RestangularProvider) {
+    RestangularProvider.addElementTransformer('choreographers/:id', function(element) {
+        console.log(element);
+        element = element[0];
+        return element;
+    });
+}]);
+
+myApp.config(['$httpProvider', function($httpProvider) {
+    $httpProvider.interceptors.push(function() {
+        return {
+            request: function(config) {
+                //Add id to Put Method
+                console.log(config);
+                //if (/choreographer\//.test(config.url) && config.params.filter && config.params.filter.id) {
+                //    config.url = config.url.replace('choreographers', 'choreographers/' + config.params.filter.id);
+                //    delete config.params.filter.id;
+                //}
+                return config;
+            },
+        };
     });
 }]);

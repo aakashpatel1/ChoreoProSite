@@ -1,0 +1,757 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mailcomposer' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData mailcomposer
+8 silly fetchNamedPackageData mailcomposer
+9 silly mapToRegistry name mailcomposer
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/mailcomposer
+13 verbose request uri https://registry.npmjs.org/mailcomposer
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 10:19:15 PM
+16 verbose request id cb360ca8a12d5fb1
+17 verbose etag "B1IHMFPUJGLQ0XUBOKQM99WD9"
+18 http request GET https://registry.npmjs.org/mailcomposer
+19 http 304 https://registry.npmjs.org/mailcomposer
+20 verbose headers { date: 'Tue, 01 Dec 2015 22:19:20 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=60',
+20 verbose headers   etag: '"B1IHMFPUJGLQ0XUBOKQM99WD9"',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-dfw1825-DFW',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1449008360.428408,VS0,VE48',
+20 verbose headers   vary: 'Accept' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Tue, 01 Dec 2015 22:19:20 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=60',
+21 silly get     etag: '"B1IHMFPUJGLQ0XUBOKQM99WD9"',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-dfw1825-DFW',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1449008360.428408,VS0,VE48',
+21 silly get     vary: 'Accept' } ]
+22 verbose etag https://registry.npmjs.org/mailcomposer from cache
+23 verbose get saving mailcomposer to /home/vagrant/.npm/registry.npmjs.org/mailcomposer/.cache.json
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule mailcomposer@2.1.0 checking installable status
+37 silly cache add args [ 'mailcomposer', null ]
+38 verbose cache add spec mailcomposer
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'mailcomposer',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'mailcomposer',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: '*',
+39 silly cache add   type: 'range' }
+40 silly addNamed mailcomposer@*
+41 verbose addNamed "*" is a valid semver range for mailcomposer
+42 silly addNameRange { name: 'mailcomposer', range: '*', hasData: false }
+43 silly mapToRegistry name mailcomposer
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/mailcomposer
+47 verbose addNameRange registry:https://registry.npmjs.org/mailcomposer not in flight; fetching
+48 verbose get https://registry.npmjs.org/mailcomposer not expired, no request
+49 silly addNameRange number 2 { name: 'mailcomposer', range: '*', hasData: true }
+50 silly addNameRange versions [ 'mailcomposer',
+50 silly addNameRange   [ '0.1.0',
+50 silly addNameRange     '0.1.1',
+50 silly addNameRange     '0.1.2',
+50 silly addNameRange     '0.1.3',
+50 silly addNameRange     '0.1.4',
+50 silly addNameRange     '0.1.5',
+50 silly addNameRange     '0.1.6',
+50 silly addNameRange     '0.1.7',
+50 silly addNameRange     '0.1.8',
+50 silly addNameRange     '0.1.9',
+50 silly addNameRange     '0.1.10',
+50 silly addNameRange     '0.1.11',
+50 silly addNameRange     '0.1.12',
+50 silly addNameRange     '0.1.13',
+50 silly addNameRange     '0.1.14',
+50 silly addNameRange     '0.1.15',
+50 silly addNameRange     '0.1.16',
+50 silly addNameRange     '0.1.17',
+50 silly addNameRange     '0.1.18',
+50 silly addNameRange     '0.1.19',
+50 silly addNameRange     '0.1.20',
+50 silly addNameRange     '0.1.21',
+50 silly addNameRange     '0.1.22',
+50 silly addNameRange     '0.1.23',
+50 silly addNameRange     '0.1.24',
+50 silly addNameRange     '0.1.25',
+50 silly addNameRange     '0.1.26',
+50 silly addNameRange     '0.1.27',
+50 silly addNameRange     '0.1.28',
+50 silly addNameRange     '0.1.29',
+50 silly addNameRange     '0.1.30',
+50 silly addNameRange     '0.1.31',
+50 silly addNameRange     '0.1.33',
+50 silly addNameRange     '0.1.34',
+50 silly addNameRange     '0.2.0',
+50 silly addNameRange     '0.2.1',
+50 silly addNameRange     '0.2.2',
+50 silly addNameRange     '0.2.3',
+50 silly addNameRange     '0.2.4',
+50 silly addNameRange     '0.2.5',
+50 silly addNameRange     '0.2.6',
+50 silly addNameRange     '0.2.7',
+50 silly addNameRange     '0.2.8',
+50 silly addNameRange     '0.2.9',
+50 silly addNameRange     '0.2.10',
+50 silly addNameRange     '0.2.11',
+50 silly addNameRange     '0.2.12',
+50 silly addNameRange     '1.0.0',
+50 silly addNameRange     '1.1.0',
+50 silly addNameRange     '1.2.0',
+50 silly addNameRange     '2.0.0',
+50 silly addNameRange     '2.1.0' ] ]
+51 silly addNamed mailcomposer@2.1.0
+52 verbose addNamed "2.1.0" is a plain semver version for mailcomposer
+53 silly cache afterAdd mailcomposer@2.1.0
+54 verbose afterAdd /home/vagrant/.npm/mailcomposer/2.1.0/package/package.json not in flight; writing
+55 verbose afterAdd /home/vagrant/.npm/mailcomposer/2.1.0/package/package.json written
+56 silly fetchNamedPackageData buildmail
+57 silly mapToRegistry name buildmail
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/buildmail
+61 verbose request uri https://registry.npmjs.org/buildmail
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 10:19:20 PM
+64 verbose etag "DBZGOA5JJBG1YUJV1V4Q9UEQ0"
+65 http request GET https://registry.npmjs.org/buildmail
+66 http 304 https://registry.npmjs.org/buildmail
+67 verbose headers { date: 'Tue, 01 Dec 2015 22:19:25 GMT',
+67 verbose headers   via: '1.1 varnish',
+67 verbose headers   'cache-control': 'max-age=60',
+67 verbose headers   etag: '"DBZGOA5JJBG1YUJV1V4Q9UEQ0"',
+67 verbose headers   age: '0',
+67 verbose headers   connection: 'keep-alive',
+67 verbose headers   'x-served-by': 'cache-dfw1830-DFW',
+67 verbose headers   'x-cache': 'HIT',
+67 verbose headers   'x-cache-hits': '1',
+67 verbose headers   'x-timer': 'S1449008365.841377,VS0,VE65',
+67 verbose headers   vary: 'Accept' }
+68 silly get cb [ 304,
+68 silly get   { date: 'Tue, 01 Dec 2015 22:19:25 GMT',
+68 silly get     via: '1.1 varnish',
+68 silly get     'cache-control': 'max-age=60',
+68 silly get     etag: '"DBZGOA5JJBG1YUJV1V4Q9UEQ0"',
+68 silly get     age: '0',
+68 silly get     connection: 'keep-alive',
+68 silly get     'x-served-by': 'cache-dfw1830-DFW',
+68 silly get     'x-cache': 'HIT',
+68 silly get     'x-cache-hits': '1',
+68 silly get     'x-timer': 'S1449008365.841377,VS0,VE65',
+68 silly get     vary: 'Accept' } ]
+69 verbose etag https://registry.npmjs.org/buildmail from cache
+70 verbose get saving buildmail to /home/vagrant/.npm/registry.npmjs.org/buildmail/.cache.json
+71 silly resolveWithNewModule buildmail@2.0.0 checking installable status
+72 silly cache add args [ 'buildmail@^2.0.0', null ]
+73 verbose cache add spec buildmail@^2.0.0
+74 silly cache add parsed spec Result {
+74 silly cache add   raw: 'buildmail@^2.0.0',
+74 silly cache add   scope: null,
+74 silly cache add   name: 'buildmail',
+74 silly cache add   rawSpec: '^2.0.0',
+74 silly cache add   spec: '>=2.0.0 <3.0.0',
+74 silly cache add   type: 'range' }
+75 silly addNamed buildmail@>=2.0.0 <3.0.0
+76 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for buildmail
+77 silly addNameRange { name: 'buildmail', range: '>=2.0.0 <3.0.0', hasData: false }
+78 silly mapToRegistry name buildmail
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/buildmail
+82 verbose addNameRange registry:https://registry.npmjs.org/buildmail not in flight; fetching
+83 verbose get https://registry.npmjs.org/buildmail not expired, no request
+84 silly addNameRange number 2 { name: 'buildmail', range: '>=2.0.0 <3.0.0', hasData: true }
+85 silly addNameRange versions [ 'buildmail',
+85 silly addNameRange   [ '0.1.0',
+85 silly addNameRange     '0.1.1',
+85 silly addNameRange     '0.1.2',
+85 silly addNameRange     '0.1.3',
+85 silly addNameRange     '0.1.4',
+85 silly addNameRange     '0.1.5',
+85 silly addNameRange     '0.1.6',
+85 silly addNameRange     '0.1.7',
+85 silly addNameRange     '0.1.8',
+85 silly addNameRange     '0.1.9',
+85 silly addNameRange     '0.1.10',
+85 silly addNameRange     '0.1.11',
+85 silly addNameRange     '1.1.0',
+85 silly addNameRange     '1.1.1',
+85 silly addNameRange     '1.2.0',
+85 silly addNameRange     '1.2.1',
+85 silly addNameRange     '1.2.2',
+85 silly addNameRange     '1.2.3',
+85 silly addNameRange     '1.2.4',
+85 silly addNameRange     '1.2.5',
+85 silly addNameRange     '1.3.0',
+85 silly addNameRange     '2.0.0' ] ]
+86 silly addNamed buildmail@2.0.0
+87 verbose addNamed "2.0.0" is a plain semver version for buildmail
+88 silly cache afterAdd buildmail@2.0.0
+89 verbose afterAdd /home/vagrant/.npm/buildmail/2.0.0/package/package.json not in flight; writing
+90 verbose afterAdd /home/vagrant/.npm/buildmail/2.0.0/package/package.json written
+91 silly fetchNamedPackageData needle
+92 silly mapToRegistry name needle
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/needle
+96 verbose request uri https://registry.npmjs.org/needle
+97 verbose request no auth needed
+98 info attempt registry request try #1 at 10:19:26 PM
+99 verbose etag "CXUPNQX6DDAVVAZ76299WMCDC"
+100 http request GET https://registry.npmjs.org/needle
+101 http 304 https://registry.npmjs.org/needle
+102 verbose headers { date: 'Tue, 01 Dec 2015 22:19:31 GMT',
+102 verbose headers   via: '1.1 varnish',
+102 verbose headers   'cache-control': 'max-age=60',
+102 verbose headers   etag: '"CXUPNQX6DDAVVAZ76299WMCDC"',
+102 verbose headers   age: '0',
+102 verbose headers   connection: 'keep-alive',
+102 verbose headers   'x-served-by': 'cache-dfw1820-DFW',
+102 verbose headers   'x-cache': 'HIT',
+102 verbose headers   'x-cache-hits': '1',
+102 verbose headers   'x-timer': 'S1449008371.105845,VS0,VE66',
+102 verbose headers   vary: 'Accept' }
+103 silly get cb [ 304,
+103 silly get   { date: 'Tue, 01 Dec 2015 22:19:31 GMT',
+103 silly get     via: '1.1 varnish',
+103 silly get     'cache-control': 'max-age=60',
+103 silly get     etag: '"CXUPNQX6DDAVVAZ76299WMCDC"',
+103 silly get     age: '0',
+103 silly get     connection: 'keep-alive',
+103 silly get     'x-served-by': 'cache-dfw1820-DFW',
+103 silly get     'x-cache': 'HIT',
+103 silly get     'x-cache-hits': '1',
+103 silly get     'x-timer': 'S1449008371.105845,VS0,VE66',
+103 silly get     vary: 'Accept' } ]
+104 verbose etag https://registry.npmjs.org/needle from cache
+105 verbose get saving needle to /home/vagrant/.npm/registry.npmjs.org/needle/.cache.json
+106 silly resolveWithNewModule needle@0.10.0 checking installable status
+107 silly cache add args [ 'needle@^0.10.0', null ]
+108 verbose cache add spec needle@^0.10.0
+109 silly cache add parsed spec Result {
+109 silly cache add   raw: 'needle@^0.10.0',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'needle',
+109 silly cache add   rawSpec: '^0.10.0',
+109 silly cache add   spec: '>=0.10.0 <0.11.0',
+109 silly cache add   type: 'range' }
+110 silly addNamed needle@>=0.10.0 <0.11.0
+111 verbose addNamed ">=0.10.0 <0.11.0" is a valid semver range for needle
+112 silly addNameRange { name: 'needle', range: '>=0.10.0 <0.11.0', hasData: false }
+113 silly mapToRegistry name needle
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry uri https://registry.npmjs.org/needle
+117 verbose addNameRange registry:https://registry.npmjs.org/needle not in flight; fetching
+118 verbose get https://registry.npmjs.org/needle not expired, no request
+119 silly addNameRange number 2 { name: 'needle', range: '>=0.10.0 <0.11.0', hasData: true }
+120 silly addNameRange versions [ 'needle',
+120 silly addNameRange   [ '0.1.0',
+120 silly addNameRange     '0.1.1',
+120 silly addNameRange     '0.1.2',
+120 silly addNameRange     '0.1.3',
+120 silly addNameRange     '0.1.4',
+120 silly addNameRange     '0.1.5',
+120 silly addNameRange     '0.1.6',
+120 silly addNameRange     '0.1.7',
+120 silly addNameRange     '0.1.8',
+120 silly addNameRange     '0.1.9',
+120 silly addNameRange     '0.2.0',
+120 silly addNameRange     '0.2.2',
+120 silly addNameRange     '0.2.3',
+120 silly addNameRange     '0.2.4',
+120 silly addNameRange     '0.2.6',
+120 silly addNameRange     '0.2.7',
+120 silly addNameRange     '0.2.8',
+120 silly addNameRange     '0.2.9',
+120 silly addNameRange     '0.3.0',
+120 silly addNameRange     '0.3.1',
+120 silly addNameRange     '0.3.2',
+120 silly addNameRange     '0.4.0',
+120 silly addNameRange     '0.4.1',
+120 silly addNameRange     '0.4.2',
+120 silly addNameRange     '0.4.3',
+120 silly addNameRange     '0.4.4',
+120 silly addNameRange     '0.4.5',
+120 silly addNameRange     '0.4.6',
+120 silly addNameRange     '0.4.7',
+120 silly addNameRange     '0.4.8',
+120 silly addNameRange     '0.4.9',
+120 silly addNameRange     '0.5.0',
+120 silly addNameRange     '0.5.1',
+120 silly addNameRange     '0.5.2',
+120 silly addNameRange     '0.5.4',
+120 silly addNameRange     '0.5.5',
+120 silly addNameRange     '0.5.6',
+120 silly addNameRange     '0.5.7',
+120 silly addNameRange     '0.5.8',
+120 silly addNameRange     '0.5.9',
+120 silly addNameRange     '0.6.0',
+120 silly addNameRange     '0.6.1',
+120 silly addNameRange     '0.6.2',
+120 silly addNameRange     '0.6.3',
+120 silly addNameRange     '0.6.4',
+120 silly addNameRange     '0.6.6',
+120 silly addNameRange     '0.7.0',
+120 silly addNameRange     '0.7.1',
+120 silly addNameRange     '0.7.2',
+120 silly addNameRange     '0.7.3',
+120 silly addNameRange     '0.7.4',
+120 silly addNameRange     '0.7.5',
+120 silly addNameRange     '0.7.6',
+120 silly addNameRange     '0.7.7',
+120 silly addNameRange     '0.7.8',
+120 silly addNameRange     '0.7.9',
+120 silly addNameRange     '0.7.10',
+120 silly addNameRange     '0.7.11',
+120 silly addNameRange     '0.8.0',
+120 silly addNameRange     '0.8.1',
+120 silly addNameRange     '0.8.2',
+120 silly addNameRange     '0.9.0',
+120 silly addNameRange     '0.9.1',
+120 silly addNameRange     '0.9.2',
+120 silly addNameRange     '0.10.0',
+120 silly addNameRange     '0.11.0' ] ]
+121 silly addNamed needle@0.10.0
+122 verbose addNamed "0.10.0" is a plain semver version for needle
+123 silly cache afterAdd needle@0.10.0
+124 verbose afterAdd /home/vagrant/.npm/needle/0.10.0/package/package.json not in flight; writing
+125 verbose afterAdd /home/vagrant/.npm/needle/0.10.0/package/package.json written
+126 silly fetchNamedPackageData debug
+127 silly mapToRegistry name debug
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry uri https://registry.npmjs.org/debug
+131 verbose request uri https://registry.npmjs.org/debug
+132 verbose request no auth needed
+133 info attempt registry request try #1 at 10:19:31 PM
+134 verbose etag "17GB1O36P188C5YVCIXLIU5GI"
+135 http request GET https://registry.npmjs.org/debug
+136 http 304 https://registry.npmjs.org/debug
+137 verbose headers { date: 'Tue, 01 Dec 2015 22:19:31 GMT',
+137 verbose headers   via: '1.1 varnish',
+137 verbose headers   'cache-control': 'max-age=60',
+137 verbose headers   etag: '"17GB1O36P188C5YVCIXLIU5GI"',
+137 verbose headers   age: '4',
+137 verbose headers   connection: 'keep-alive',
+137 verbose headers   'x-served-by': 'cache-dfw1821-DFW',
+137 verbose headers   'x-cache': 'HIT',
+137 verbose headers   'x-cache-hits': '1',
+137 verbose headers   'x-timer': 'S1449008371.608142,VS0,VE0',
+137 verbose headers   vary: 'Accept' }
+138 silly get cb [ 304,
+138 silly get   { date: 'Tue, 01 Dec 2015 22:19:31 GMT',
+138 silly get     via: '1.1 varnish',
+138 silly get     'cache-control': 'max-age=60',
+138 silly get     etag: '"17GB1O36P188C5YVCIXLIU5GI"',
+138 silly get     age: '4',
+138 silly get     connection: 'keep-alive',
+138 silly get     'x-served-by': 'cache-dfw1821-DFW',
+138 silly get     'x-cache': 'HIT',
+138 silly get     'x-cache-hits': '1',
+138 silly get     'x-timer': 'S1449008371.608142,VS0,VE0',
+138 silly get     vary: 'Accept' } ]
+139 verbose etag https://registry.npmjs.org/debug from cache
+140 verbose get saving debug to /home/vagrant/.npm/registry.npmjs.org/debug/.cache.json
+141 silly resolveWithNewModule debug@2.2.0 checking installable status
+142 silly cache add args [ 'debug@^2.1.2', null ]
+143 verbose cache add spec debug@^2.1.2
+144 silly cache add parsed spec Result {
+144 silly cache add   raw: 'debug@^2.1.2',
+144 silly cache add   scope: null,
+144 silly cache add   name: 'debug',
+144 silly cache add   rawSpec: '^2.1.2',
+144 silly cache add   spec: '>=2.1.2 <3.0.0',
+144 silly cache add   type: 'range' }
+145 silly addNamed debug@>=2.1.2 <3.0.0
+146 verbose addNamed ">=2.1.2 <3.0.0" is a valid semver range for debug
+147 silly addNameRange { name: 'debug', range: '>=2.1.2 <3.0.0', hasData: false }
+148 silly mapToRegistry name debug
+149 silly mapToRegistry using default registry
+150 silly mapToRegistry registry https://registry.npmjs.org/
+151 silly mapToRegistry uri https://registry.npmjs.org/debug
+152 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+153 verbose get https://registry.npmjs.org/debug not expired, no request
+154 silly addNameRange number 2 { name: 'debug', range: '>=2.1.2 <3.0.0', hasData: true }
+155 silly addNameRange versions [ 'debug',
+155 silly addNameRange   [ '0.0.1',
+155 silly addNameRange     '0.1.0',
+155 silly addNameRange     '0.2.0',
+155 silly addNameRange     '0.3.0',
+155 silly addNameRange     '0.4.0',
+155 silly addNameRange     '0.4.1',
+155 silly addNameRange     '0.5.0',
+155 silly addNameRange     '0.6.0',
+155 silly addNameRange     '0.7.0',
+155 silly addNameRange     '0.7.1',
+155 silly addNameRange     '0.7.2',
+155 silly addNameRange     '0.7.3',
+155 silly addNameRange     '0.7.4',
+155 silly addNameRange     '0.8.0',
+155 silly addNameRange     '0.8.1',
+155 silly addNameRange     '1.0.0',
+155 silly addNameRange     '1.0.1',
+155 silly addNameRange     '1.0.2',
+155 silly addNameRange     '1.0.3',
+155 silly addNameRange     '1.0.4',
+155 silly addNameRange     '2.0.0',
+155 silly addNameRange     '2.1.0',
+155 silly addNameRange     '2.1.1',
+155 silly addNameRange     '2.1.2',
+155 silly addNameRange     '2.1.3',
+155 silly addNameRange     '2.2.0' ] ]
+156 silly addNamed debug@2.2.0
+157 verbose addNamed "2.2.0" is a plain semver version for debug
+158 silly cache afterAdd debug@2.2.0
+159 verbose afterAdd /home/vagrant/.npm/debug/2.2.0/package/package.json not in flight; writing
+160 verbose afterAdd /home/vagrant/.npm/debug/2.2.0/package/package.json written
+161 silly fetchNamedPackageData ms
+162 silly mapToRegistry name ms
+163 silly mapToRegistry using default registry
+164 silly mapToRegistry registry https://registry.npmjs.org/
+165 silly mapToRegistry uri https://registry.npmjs.org/ms
+166 verbose request uri https://registry.npmjs.org/ms
+167 verbose request no auth needed
+168 info attempt registry request try #1 at 10:19:31 PM
+169 verbose etag "EUU873QIDU99OJJH6PLRHYXIJ"
+170 http request GET https://registry.npmjs.org/ms
+171 http 304 https://registry.npmjs.org/ms
+172 verbose headers { date: 'Tue, 01 Dec 2015 22:19:36 GMT',
+172 verbose headers   via: '1.1 varnish',
+172 verbose headers   'cache-control': 'max-age=60',
+172 verbose headers   etag: '"EUU873QIDU99OJJH6PLRHYXIJ"',
+172 verbose headers   age: '0',
+172 verbose headers   connection: 'keep-alive',
+172 verbose headers   'x-served-by': 'cache-dfw1830-DFW',
+172 verbose headers   'x-cache': 'HIT',
+172 verbose headers   'x-cache-hits': '1',
+172 verbose headers   'x-timer': 'S1449008376.737701,VS0,VE194',
+172 verbose headers   vary: 'Accept' }
+173 silly get cb [ 304,
+173 silly get   { date: 'Tue, 01 Dec 2015 22:19:36 GMT',
+173 silly get     via: '1.1 varnish',
+173 silly get     'cache-control': 'max-age=60',
+173 silly get     etag: '"EUU873QIDU99OJJH6PLRHYXIJ"',
+173 silly get     age: '0',
+173 silly get     connection: 'keep-alive',
+173 silly get     'x-served-by': 'cache-dfw1830-DFW',
+173 silly get     'x-cache': 'HIT',
+173 silly get     'x-cache-hits': '1',
+173 silly get     'x-timer': 'S1449008376.737701,VS0,VE194',
+173 silly get     vary: 'Accept' } ]
+174 verbose etag https://registry.npmjs.org/ms from cache
+175 verbose get saving ms to /home/vagrant/.npm/registry.npmjs.org/ms/.cache.json
+176 silly resolveWithNewModule ms@0.7.1 checking installable status
+177 silly cache add args [ 'ms@0.7.1', null ]
+178 verbose cache add spec ms@0.7.1
+179 silly cache add parsed spec Result {
+179 silly cache add   raw: 'ms@0.7.1',
+179 silly cache add   scope: null,
+179 silly cache add   name: 'ms',
+179 silly cache add   rawSpec: '0.7.1',
+179 silly cache add   spec: '0.7.1',
+179 silly cache add   type: 'version' }
+180 silly addNamed ms@0.7.1
+181 verbose addNamed "0.7.1" is a plain semver version for ms
+182 silly mapToRegistry name ms
+183 silly mapToRegistry using default registry
+184 silly mapToRegistry registry https://registry.npmjs.org/
+185 silly mapToRegistry uri https://registry.npmjs.org/ms
+186 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+187 verbose get https://registry.npmjs.org/ms not expired, no request
+188 silly cache afterAdd ms@0.7.1
+189 verbose afterAdd /home/vagrant/.npm/ms/0.7.1/package/package.json not in flight; writing
+190 verbose afterAdd /home/vagrant/.npm/ms/0.7.1/package/package.json written
+191 silly loadAllDepsIntoIdealTree Finishing
+192 silly idealTree:prePrune node-todo@0.0.0
+192 silly idealTree:prePrune ├── accepts@1.0.7
+192 silly idealTree:prePrune ├── addressparser@0.3.2
+192 silly idealTree:prePrune ├── basic-auth@1.0.0
+192 silly idealTree:prePrune ├── bignumber.js@2.0.7
+192 silly idealTree:prePrune ├── body-parser@1.5.2
+192 silly idealTree:prePrune ├── bson@0.2.2
+192 silly idealTree:prePrune ├── buffer-crc32@0.2.3
+192 silly idealTree:prePrune ├─┬ buildmail@2.0.0
+192 silly idealTree:prePrune │ ├── debug@2.2.0
+192 silly idealTree:prePrune │ ├── ms@0.7.1
+192 silly idealTree:prePrune │ └── needle@0.10.0
+192 silly idealTree:prePrune ├── bytes@1.0.0
+192 silly idealTree:prePrune ├── clone@1.0.2
+192 silly idealTree:prePrune ├── cookie-signature@1.0.4
+192 silly idealTree:prePrune ├── cookie@0.1.2
+192 silly idealTree:prePrune ├── core-util-is@1.0.2
+192 silly idealTree:prePrune ├── debug@1.0.4
+192 silly idealTree:prePrune ├── depd@0.4.4
+192 silly idealTree:prePrune ├── ee-first@1.0.3
+192 silly idealTree:prePrune ├── escape-html@1.0.1
+192 silly idealTree:prePrune ├── express@4.7.4
+192 silly idealTree:prePrune ├── finalhandler@0.1.0
+192 silly idealTree:prePrune ├── finished@1.2.2
+192 silly idealTree:prePrune ├── fresh@0.2.2
+192 silly idealTree:prePrune ├── hooks@0.2.1
+192 silly idealTree:prePrune ├── iconv-lite@0.4.4
+192 silly idealTree:prePrune ├── inherits@2.0.1
+192 silly idealTree:prePrune ├── ipaddr.js@0.1.2
+192 silly idealTree:prePrune ├── isarray@0.0.1
+192 silly idealTree:prePrune ├── kerberos@0.0.3
+192 silly idealTree:prePrune ├── libbase64@0.1.0
+192 silly idealTree:prePrune ├─┬ libmime@1.2.0
+192 silly idealTree:prePrune │ └── iconv-lite@0.4.13
+192 silly idealTree:prePrune ├── libqp@1.1.0
+192 silly idealTree:prePrune ├── mailcomposer@2.1.0
+192 silly idealTree:prePrune ├── media-typer@0.2.0
+192 silly idealTree:prePrune ├── merge-descriptors@0.0.2
+192 silly idealTree:prePrune ├─┬ method-override@2.1.3
+192 silly idealTree:prePrune │ ├── parseurl@1.3.0
+192 silly idealTree:prePrune │ └── vary@1.0.1
+192 silly idealTree:prePrune ├── methods@1.1.0
+192 silly idealTree:prePrune ├── mime-types@1.0.2
+192 silly idealTree:prePrune ├── mime@1.2.11
+192 silly idealTree:prePrune ├── mongodb@1.3.19
+192 silly idealTree:prePrune ├─┬ mongoose@3.6.20
+192 silly idealTree:prePrune │ └── ms@0.1.0
+192 silly idealTree:prePrune ├── morgan@1.2.3
+192 silly idealTree:prePrune ├── mpath@0.1.1
+192 silly idealTree:prePrune ├─┬ mpromise@0.2.1
+192 silly idealTree:prePrune │ └── sliced@0.0.4
+192 silly idealTree:prePrune ├── ms@0.6.2
+192 silly idealTree:prePrune ├── muri@0.3.1
+192 silly idealTree:prePrune ├── mysql@2.9.0
+192 silly idealTree:prePrune ├─┬ needle@0.11.0
+192 silly idealTree:prePrune │ ├── debug@2.2.0
+192 silly idealTree:prePrune │ └── ms@0.7.1
+192 silly idealTree:prePrune ├── negotiator@0.4.7
+192 silly idealTree:prePrune ├── ng-admin@0.9.1
+192 silly idealTree:prePrune ├── nodemailer-direct-transport@1.1.0
+192 silly idealTree:prePrune ├── nodemailer-smtp-transport@1.0.4
+192 silly idealTree:prePrune ├── nodemailer-wellknown@0.1.7
+192 silly idealTree:prePrune ├── nodemailer@1.10.0
+192 silly idealTree:prePrune ├─┬ on-finished@2.1.0
+192 silly idealTree:prePrune │ └── ee-first@1.0.5
+192 silly idealTree:prePrune ├── parseurl@1.2.0
+192 silly idealTree:prePrune ├── path-to-regexp@0.1.3
+192 silly idealTree:prePrune ├── proxy-addr@1.0.1
+192 silly idealTree:prePrune ├── qs@0.6.6
+192 silly idealTree:prePrune ├── range-parser@1.0.0
+192 silly idealTree:prePrune ├── raw-body@1.3.0
+192 silly idealTree:prePrune ├── readable-stream@1.1.13
+192 silly idealTree:prePrune ├── regexp-clone@0.0.1
+192 silly idealTree:prePrune ├── send@0.7.4
+192 silly idealTree:prePrune ├── serve-static@1.4.4
+192 silly idealTree:prePrune ├── sliced@0.0.5
+192 silly idealTree:prePrune ├── smtp-connection@1.3.1
+192 silly idealTree:prePrune ├── string_decoder@0.10.31
+192 silly idealTree:prePrune ├── type-is@1.3.2
+192 silly idealTree:prePrune ├── utils-merge@1.0.0
+192 silly idealTree:prePrune └── vary@0.1.0
+193 silly loadIdealTree Finishing
+194 silly currentTree node-todo@0.0.0
+194 silly currentTree ├── accepts@1.0.7
+194 silly currentTree ├── addressparser@0.3.2
+194 silly currentTree ├── basic-auth@1.0.0
+194 silly currentTree ├── bignumber.js@2.0.7
+194 silly currentTree ├── body-parser@1.5.2
+194 silly currentTree ├── bson@0.2.2
+194 silly currentTree ├── buffer-crc32@0.2.3
+194 silly currentTree ├── bytes@1.0.0
+194 silly currentTree ├── clone@1.0.2
+194 silly currentTree ├── cookie-signature@1.0.4
+194 silly currentTree ├── cookie@0.1.2
+194 silly currentTree ├── core-util-is@1.0.2
+194 silly currentTree ├── debug@1.0.4
+194 silly currentTree ├── depd@0.4.4
+194 silly currentTree ├── ee-first@1.0.3
+194 silly currentTree ├── escape-html@1.0.1
+194 silly currentTree ├── express@4.7.4
+194 silly currentTree ├── finalhandler@0.1.0
+194 silly currentTree ├── finished@1.2.2
+194 silly currentTree ├── fresh@0.2.2
+194 silly currentTree ├── hooks@0.2.1
+194 silly currentTree ├── iconv-lite@0.4.4
+194 silly currentTree ├── inherits@2.0.1
+194 silly currentTree ├── ipaddr.js@0.1.2
+194 silly currentTree ├── isarray@0.0.1
+194 silly currentTree ├── kerberos@0.0.3
+194 silly currentTree ├── libbase64@0.1.0
+194 silly currentTree ├─┬ libmime@1.2.0
+194 silly currentTree │ └── iconv-lite@0.4.13
+194 silly currentTree ├── libqp@1.1.0
+194 silly currentTree ├── media-typer@0.2.0
+194 silly currentTree ├── merge-descriptors@0.0.2
+194 silly currentTree ├─┬ method-override@2.1.3
+194 silly currentTree │ ├── parseurl@1.3.0
+194 silly currentTree │ └── vary@1.0.1
+194 silly currentTree ├── methods@1.1.0
+194 silly currentTree ├── mime-types@1.0.2
+194 silly currentTree ├── mime@1.2.11
+194 silly currentTree ├── mongodb@1.3.19
+194 silly currentTree ├─┬ mongoose@3.6.20
+194 silly currentTree │ └── ms@0.1.0
+194 silly currentTree ├── morgan@1.2.3
+194 silly currentTree ├── mpath@0.1.1
+194 silly currentTree ├─┬ mpromise@0.2.1
+194 silly currentTree │ └── sliced@0.0.4
+194 silly currentTree ├── ms@0.6.2
+194 silly currentTree ├── muri@0.3.1
+194 silly currentTree ├── mysql@2.9.0
+194 silly currentTree ├─┬ needle@0.11.0
+194 silly currentTree │ ├── debug@2.2.0
+194 silly currentTree │ └── ms@0.7.1
+194 silly currentTree ├── negotiator@0.4.7
+194 silly currentTree ├── ng-admin@0.9.1
+194 silly currentTree ├── nodemailer-direct-transport@1.1.0
+194 silly currentTree ├── nodemailer-smtp-transport@1.0.4
+194 silly currentTree ├── nodemailer-wellknown@0.1.7
+194 silly currentTree ├── nodemailer@1.10.0
+194 silly currentTree ├─┬ on-finished@2.1.0
+194 silly currentTree │ └── ee-first@1.0.5
+194 silly currentTree ├── parseurl@1.2.0
+194 silly currentTree ├── path-to-regexp@0.1.3
+194 silly currentTree ├── proxy-addr@1.0.1
+194 silly currentTree ├── qs@0.6.6
+194 silly currentTree ├── range-parser@1.0.0
+194 silly currentTree ├── raw-body@1.3.0
+194 silly currentTree ├── readable-stream@1.1.13
+194 silly currentTree ├── regexp-clone@0.0.1
+194 silly currentTree ├── send@0.7.4
+194 silly currentTree ├── serve-static@1.4.4
+194 silly currentTree ├── sliced@0.0.5
+194 silly currentTree ├── smtp-connection@1.3.1
+194 silly currentTree ├── string_decoder@0.10.31
+194 silly currentTree ├── type-is@1.3.2
+194 silly currentTree ├── utils-merge@1.0.0
+194 silly currentTree └── vary@0.1.0
+195 silly idealTree node-todo@0.0.0
+195 silly idealTree ├── accepts@1.0.7
+195 silly idealTree ├── addressparser@0.3.2
+195 silly idealTree ├── basic-auth@1.0.0
+195 silly idealTree ├── bignumber.js@2.0.7
+195 silly idealTree ├── body-parser@1.5.2
+195 silly idealTree ├── bson@0.2.2
+195 silly idealTree ├── buffer-crc32@0.2.3
+195 silly idealTree ├─┬ buildmail@2.0.0
+195 silly idealTree │ ├── debug@2.2.0
+195 silly idealTree │ ├── ms@0.7.1
+195 silly idealTree │ └── needle@0.10.0
+195 silly idealTree ├── bytes@1.0.0
+195 silly idealTree ├── clone@1.0.2
+195 silly idealTree ├── cookie-signature@1.0.4
+195 silly idealTree ├── cookie@0.1.2
+195 silly idealTree ├── core-util-is@1.0.2
+195 silly idealTree ├── debug@1.0.4
+195 silly idealTree ├── depd@0.4.4
+195 silly idealTree ├── ee-first@1.0.3
+195 silly idealTree ├── escape-html@1.0.1
+195 silly idealTree ├── express@4.7.4
+195 silly idealTree ├── finalhandler@0.1.0
+195 silly idealTree ├── finished@1.2.2
+195 silly idealTree ├── fresh@0.2.2
+195 silly idealTree ├── hooks@0.2.1
+195 silly idealTree ├── iconv-lite@0.4.4
+195 silly idealTree ├── inherits@2.0.1
+195 silly idealTree ├── ipaddr.js@0.1.2
+195 silly idealTree ├── isarray@0.0.1
+195 silly idealTree ├── kerberos@0.0.3
+195 silly idealTree ├── libbase64@0.1.0
+195 silly idealTree ├─┬ libmime@1.2.0
+195 silly idealTree │ └── iconv-lite@0.4.13
+195 silly idealTree ├── libqp@1.1.0
+195 silly idealTree ├── mailcomposer@2.1.0
+195 silly idealTree ├── media-typer@0.2.0
+195 silly idealTree ├── merge-descriptors@0.0.2
+195 silly idealTree ├─┬ method-override@2.1.3
+195 silly idealTree │ ├── parseurl@1.3.0
+195 silly idealTree │ └── vary@1.0.1
+195 silly idealTree ├── methods@1.1.0
+195 silly idealTree ├── mime-types@1.0.2
+195 silly idealTree ├── mime@1.2.11
+195 silly idealTree ├── mongodb@1.3.19
+195 silly idealTree ├─┬ mongoose@3.6.20
+195 silly idealTree │ └── ms@0.1.0
+195 silly idealTree ├── morgan@1.2.3
+195 silly idealTree ├── mpath@0.1.1
+195 silly idealTree ├─┬ mpromise@0.2.1
+195 silly idealTree │ └── sliced@0.0.4
+195 silly idealTree ├── ms@0.6.2
+195 silly idealTree ├── muri@0.3.1
+195 silly idealTree ├── mysql@2.9.0
+195 silly idealTree ├─┬ needle@0.11.0
+195 silly idealTree │ ├── debug@2.2.0
+195 silly idealTree │ └── ms@0.7.1
+195 silly idealTree ├── negotiator@0.4.7
+195 silly idealTree ├── ng-admin@0.9.1
+195 silly idealTree ├── nodemailer-direct-transport@1.1.0
+195 silly idealTree ├── nodemailer-smtp-transport@1.0.4
+195 silly idealTree ├── nodemailer-wellknown@0.1.7
+195 silly idealTree ├── nodemailer@1.10.0
+195 silly idealTree ├─┬ on-finished@2.1.0
+195 silly idealTree │ └── ee-first@1.0.5
+195 silly idealTree ├── parseurl@1.2.0
+195 silly idealTree ├── path-to-regexp@0.1.3
+195 silly idealTree ├── proxy-addr@1.0.1
+195 silly idealTree ├── qs@0.6.6
+195 silly idealTree ├── range-parser@1.0.0
+195 silly idealTree ├── raw-body@1.3.0
+195 silly idealTree ├── readable-stream@1.1.13
+195 silly idealTree ├── regexp-clone@0.0.1
+195 silly idealTree ├── send@0.7.4
+195 silly idealTree ├── serve-static@1.4.4
+195 silly idealTree ├── sliced@0.0.5
+195 silly idealTree ├── smtp-connection@1.3.1
+195 silly idealTree ├── string_decoder@0.10.31
+195 silly idealTree ├── type-is@1.3.2
+195 silly idealTree ├── utils-merge@1.0.0
+195 silly idealTree └── vary@0.1.0
+196 silly generateActionsToTake Starting
+197 silly install generateActionsToTake
+198 silly rollbackFailedOptional Starting
+199 silly rollbackFailedOptional Finishing
+200 silly runTopLevelLifecycles Starting
+201 silly runTopLevelLifecycles Finishing
+202 silly install printInstalled
+203 verbose stack Error: Appears to be a git repo or submodule.
+203 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-install-checks/index.js:138:15
+203 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+204 verbose cwd /var/www/public/ChoreoProSite/WebSite/app
+205 error Linux 3.13.0-55-generic
+206 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "mailcomposer"
+207 error node v5.0.0
+208 error npm  v3.3.6
+209 error path /var/www/public/ChoreoProSite/WebSite/app/node_modules/Nodemailer
+210 error code EISGIT
+211 error git Appears to be a git repo or submodule.
+211 error git     /var/www/public/ChoreoProSite/WebSite/app/node_modules/Nodemailer
+211 error git Refusing to remove it. Update manually,
+211 error git or move it out of the way first.
+212 verbose exit [ 1, true ]

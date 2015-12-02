@@ -1,0 +1,743 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'needle' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData needle
+8 silly fetchNamedPackageData needle
+9 silly mapToRegistry name needle
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/needle
+13 verbose request uri https://registry.npmjs.org/needle
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 4:14:32 PM
+16 verbose request id b617c4ab8070b2a7
+17 verbose etag "CXUPNQX6DDAVVAZ76299WMCDC"
+18 http request GET https://registry.npmjs.org/needle
+19 http 304 https://registry.npmjs.org/needle
+20 verbose headers { date: 'Tue, 01 Dec 2015 16:14:38 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=60',
+20 verbose headers   etag: '"CXUPNQX6DDAVVAZ76299WMCDC"',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-ord1730-ORD',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1448986478.835130,VS0,VE74',
+20 verbose headers   vary: 'Accept' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Tue, 01 Dec 2015 16:14:38 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=60',
+21 silly get     etag: '"CXUPNQX6DDAVVAZ76299WMCDC"',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-ord1730-ORD',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1448986478.835130,VS0,VE74',
+21 silly get     vary: 'Accept' } ]
+22 verbose etag https://registry.npmjs.org/needle from cache
+23 verbose get saving needle to /home/vagrant/.npm/registry.npmjs.org/needle/.cache.json
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule needle@0.11.0 checking installable status
+37 silly cache add args [ 'needle', null ]
+38 verbose cache add spec needle
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'needle',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'needle',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: '*',
+39 silly cache add   type: 'range' }
+40 silly addNamed needle@*
+41 verbose addNamed "*" is a valid semver range for needle
+42 silly addNameRange { name: 'needle', range: '*', hasData: false }
+43 silly mapToRegistry name needle
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/needle
+47 verbose addNameRange registry:https://registry.npmjs.org/needle not in flight; fetching
+48 verbose get https://registry.npmjs.org/needle not expired, no request
+49 silly addNameRange number 2 { name: 'needle', range: '*', hasData: true }
+50 silly addNameRange versions [ 'needle',
+50 silly addNameRange   [ '0.1.0',
+50 silly addNameRange     '0.1.1',
+50 silly addNameRange     '0.1.2',
+50 silly addNameRange     '0.1.3',
+50 silly addNameRange     '0.1.4',
+50 silly addNameRange     '0.1.5',
+50 silly addNameRange     '0.1.6',
+50 silly addNameRange     '0.1.7',
+50 silly addNameRange     '0.1.8',
+50 silly addNameRange     '0.1.9',
+50 silly addNameRange     '0.2.0',
+50 silly addNameRange     '0.2.2',
+50 silly addNameRange     '0.2.3',
+50 silly addNameRange     '0.2.4',
+50 silly addNameRange     '0.2.6',
+50 silly addNameRange     '0.2.7',
+50 silly addNameRange     '0.2.8',
+50 silly addNameRange     '0.2.9',
+50 silly addNameRange     '0.3.0',
+50 silly addNameRange     '0.3.1',
+50 silly addNameRange     '0.3.2',
+50 silly addNameRange     '0.4.0',
+50 silly addNameRange     '0.4.1',
+50 silly addNameRange     '0.4.2',
+50 silly addNameRange     '0.4.3',
+50 silly addNameRange     '0.4.4',
+50 silly addNameRange     '0.4.5',
+50 silly addNameRange     '0.4.6',
+50 silly addNameRange     '0.4.7',
+50 silly addNameRange     '0.4.8',
+50 silly addNameRange     '0.4.9',
+50 silly addNameRange     '0.5.0',
+50 silly addNameRange     '0.5.1',
+50 silly addNameRange     '0.5.2',
+50 silly addNameRange     '0.5.4',
+50 silly addNameRange     '0.5.5',
+50 silly addNameRange     '0.5.6',
+50 silly addNameRange     '0.5.7',
+50 silly addNameRange     '0.5.8',
+50 silly addNameRange     '0.5.9',
+50 silly addNameRange     '0.6.0',
+50 silly addNameRange     '0.6.1',
+50 silly addNameRange     '0.6.2',
+50 silly addNameRange     '0.6.3',
+50 silly addNameRange     '0.6.4',
+50 silly addNameRange     '0.6.6',
+50 silly addNameRange     '0.7.0',
+50 silly addNameRange     '0.7.1',
+50 silly addNameRange     '0.7.2',
+50 silly addNameRange     '0.7.3',
+50 silly addNameRange     '0.7.4',
+50 silly addNameRange     '0.7.5',
+50 silly addNameRange     '0.7.6',
+50 silly addNameRange     '0.7.7',
+50 silly addNameRange     '0.7.8',
+50 silly addNameRange     '0.7.9',
+50 silly addNameRange     '0.7.10',
+50 silly addNameRange     '0.7.11',
+50 silly addNameRange     '0.8.0',
+50 silly addNameRange     '0.8.1',
+50 silly addNameRange     '0.8.2',
+50 silly addNameRange     '0.9.0',
+50 silly addNameRange     '0.9.1',
+50 silly addNameRange     '0.9.2',
+50 silly addNameRange     '0.10.0',
+50 silly addNameRange     '0.11.0' ] ]
+51 silly addNamed needle@0.11.0
+52 verbose addNamed "0.11.0" is a plain semver version for needle
+53 silly cache afterAdd needle@0.11.0
+54 verbose afterAdd /home/vagrant/.npm/needle/0.11.0/package/package.json not in flight; writing
+55 verbose afterAdd /home/vagrant/.npm/needle/0.11.0/package/package.json written
+56 silly fetchNamedPackageData debug
+57 silly mapToRegistry name debug
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/debug
+61 verbose request uri https://registry.npmjs.org/debug
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 4:14:38 PM
+64 verbose etag "17GB1O36P188C5YVCIXLIU5GI"
+65 http request GET https://registry.npmjs.org/debug
+66 http 304 https://registry.npmjs.org/debug
+67 verbose headers { date: 'Tue, 01 Dec 2015 16:14:44 GMT',
+67 verbose headers   via: '1.1 varnish',
+67 verbose headers   'cache-control': 'max-age=60',
+67 verbose headers   etag: '"17GB1O36P188C5YVCIXLIU5GI"',
+67 verbose headers   age: '35',
+67 verbose headers   connection: 'keep-alive',
+67 verbose headers   'x-served-by': 'cache-ord1730-ORD',
+67 verbose headers   'x-cache': 'HIT',
+67 verbose headers   'x-cache-hits': '5',
+67 verbose headers   'x-timer': 'S1448986484.342901,VS0,VE0',
+67 verbose headers   vary: 'Accept' }
+68 silly get cb [ 304,
+68 silly get   { date: 'Tue, 01 Dec 2015 16:14:44 GMT',
+68 silly get     via: '1.1 varnish',
+68 silly get     'cache-control': 'max-age=60',
+68 silly get     etag: '"17GB1O36P188C5YVCIXLIU5GI"',
+68 silly get     age: '35',
+68 silly get     connection: 'keep-alive',
+68 silly get     'x-served-by': 'cache-ord1730-ORD',
+68 silly get     'x-cache': 'HIT',
+68 silly get     'x-cache-hits': '5',
+68 silly get     'x-timer': 'S1448986484.342901,VS0,VE0',
+68 silly get     vary: 'Accept' } ]
+69 verbose etag https://registry.npmjs.org/debug from cache
+70 verbose get saving debug to /home/vagrant/.npm/registry.npmjs.org/debug/.cache.json
+71 silly resolveWithNewModule debug@2.2.0 checking installable status
+72 silly cache add args [ 'debug@^2.1.2', null ]
+73 verbose cache add spec debug@^2.1.2
+74 silly cache add parsed spec Result {
+74 silly cache add   raw: 'debug@^2.1.2',
+74 silly cache add   scope: null,
+74 silly cache add   name: 'debug',
+74 silly cache add   rawSpec: '^2.1.2',
+74 silly cache add   spec: '>=2.1.2 <3.0.0',
+74 silly cache add   type: 'range' }
+75 silly addNamed debug@>=2.1.2 <3.0.0
+76 verbose addNamed ">=2.1.2 <3.0.0" is a valid semver range for debug
+77 silly addNameRange { name: 'debug', range: '>=2.1.2 <3.0.0', hasData: false }
+78 silly mapToRegistry name debug
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/debug
+82 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+83 verbose get https://registry.npmjs.org/debug not expired, no request
+84 silly addNameRange number 2 { name: 'debug', range: '>=2.1.2 <3.0.0', hasData: true }
+85 silly addNameRange versions [ 'debug',
+85 silly addNameRange   [ '0.0.1',
+85 silly addNameRange     '0.1.0',
+85 silly addNameRange     '0.2.0',
+85 silly addNameRange     '0.3.0',
+85 silly addNameRange     '0.4.0',
+85 silly addNameRange     '0.4.1',
+85 silly addNameRange     '0.5.0',
+85 silly addNameRange     '0.6.0',
+85 silly addNameRange     '0.7.0',
+85 silly addNameRange     '0.7.1',
+85 silly addNameRange     '0.7.2',
+85 silly addNameRange     '0.7.3',
+85 silly addNameRange     '0.7.4',
+85 silly addNameRange     '0.8.0',
+85 silly addNameRange     '0.8.1',
+85 silly addNameRange     '1.0.0',
+85 silly addNameRange     '1.0.1',
+85 silly addNameRange     '1.0.2',
+85 silly addNameRange     '1.0.3',
+85 silly addNameRange     '1.0.4',
+85 silly addNameRange     '2.0.0',
+85 silly addNameRange     '2.1.0',
+85 silly addNameRange     '2.1.1',
+85 silly addNameRange     '2.1.2',
+85 silly addNameRange     '2.1.3',
+85 silly addNameRange     '2.2.0' ] ]
+86 silly addNamed debug@2.2.0
+87 verbose addNamed "2.2.0" is a plain semver version for debug
+88 silly cache afterAdd debug@2.2.0
+89 verbose afterAdd /home/vagrant/.npm/debug/2.2.0/package/package.json not in flight; writing
+90 verbose afterAdd /home/vagrant/.npm/debug/2.2.0/package/package.json written
+91 silly fetchNamedPackageData ms
+92 silly mapToRegistry name ms
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/ms
+96 verbose request uri https://registry.npmjs.org/ms
+97 verbose request no auth needed
+98 info attempt registry request try #1 at 4:14:43 PM
+99 verbose etag "EUU873QIDU99OJJH6PLRHYXIJ"
+100 http request GET https://registry.npmjs.org/ms
+101 http 304 https://registry.npmjs.org/ms
+102 verbose headers { date: 'Tue, 01 Dec 2015 16:14:44 GMT',
+102 verbose headers   via: '1.1 varnish',
+102 verbose headers   'cache-control': 'max-age=60',
+102 verbose headers   etag: '"EUU873QIDU99OJJH6PLRHYXIJ"',
+102 verbose headers   age: '25',
+102 verbose headers   connection: 'keep-alive',
+102 verbose headers   'x-served-by': 'cache-ord1724-ORD',
+102 verbose headers   'x-cache': 'HIT',
+102 verbose headers   'x-cache-hits': '3',
+102 verbose headers   'x-timer': 'S1448986484.559068,VS0,VE0',
+102 verbose headers   vary: 'Accept' }
+103 silly get cb [ 304,
+103 silly get   { date: 'Tue, 01 Dec 2015 16:14:44 GMT',
+103 silly get     via: '1.1 varnish',
+103 silly get     'cache-control': 'max-age=60',
+103 silly get     etag: '"EUU873QIDU99OJJH6PLRHYXIJ"',
+103 silly get     age: '25',
+103 silly get     connection: 'keep-alive',
+103 silly get     'x-served-by': 'cache-ord1724-ORD',
+103 silly get     'x-cache': 'HIT',
+103 silly get     'x-cache-hits': '3',
+103 silly get     'x-timer': 'S1448986484.559068,VS0,VE0',
+103 silly get     vary: 'Accept' } ]
+104 verbose etag https://registry.npmjs.org/ms from cache
+105 verbose get saving ms to /home/vagrant/.npm/registry.npmjs.org/ms/.cache.json
+106 silly resolveWithNewModule ms@0.7.1 checking installable status
+107 silly cache add args [ 'ms@0.7.1', null ]
+108 verbose cache add spec ms@0.7.1
+109 silly cache add parsed spec Result {
+109 silly cache add   raw: 'ms@0.7.1',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'ms',
+109 silly cache add   rawSpec: '0.7.1',
+109 silly cache add   spec: '0.7.1',
+109 silly cache add   type: 'version' }
+110 silly addNamed ms@0.7.1
+111 verbose addNamed "0.7.1" is a plain semver version for ms
+112 silly mapToRegistry name ms
+113 silly mapToRegistry using default registry
+114 silly mapToRegistry registry https://registry.npmjs.org/
+115 silly mapToRegistry uri https://registry.npmjs.org/ms
+116 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+117 verbose get https://registry.npmjs.org/ms not expired, no request
+118 silly cache afterAdd ms@0.7.1
+119 verbose afterAdd /home/vagrant/.npm/ms/0.7.1/package/package.json not in flight; writing
+120 verbose afterAdd /home/vagrant/.npm/ms/0.7.1/package/package.json written
+121 silly loadAllDepsIntoIdealTree Finishing
+122 silly idealTree:prePrune node-todo@0.0.0
+122 silly idealTree:prePrune ├── accepts@1.0.7
+122 silly idealTree:prePrune ├── addressparser@0.3.2
+122 silly idealTree:prePrune ├── basic-auth@1.0.0
+122 silly idealTree:prePrune ├── bignumber.js@2.0.7
+122 silly idealTree:prePrune ├── body-parser@1.5.2
+122 silly idealTree:prePrune ├── bson@0.2.2
+122 silly idealTree:prePrune ├── buffer-crc32@0.2.3
+122 silly idealTree:prePrune ├── bytes@1.0.0
+122 silly idealTree:prePrune ├── clone@1.0.2
+122 silly idealTree:prePrune ├── cookie-signature@1.0.4
+122 silly idealTree:prePrune ├── cookie@0.1.2
+122 silly idealTree:prePrune ├── core-util-is@1.0.2
+122 silly idealTree:prePrune ├── debug@1.0.4
+122 silly idealTree:prePrune ├── depd@0.4.4
+122 silly idealTree:prePrune ├── ee-first@1.0.3
+122 silly idealTree:prePrune ├── escape-html@1.0.1
+122 silly idealTree:prePrune ├── express@4.7.4
+122 silly idealTree:prePrune ├── finalhandler@0.1.0
+122 silly idealTree:prePrune ├── finished@1.2.2
+122 silly idealTree:prePrune ├── fresh@0.2.2
+122 silly idealTree:prePrune ├── hooks@0.2.1
+122 silly idealTree:prePrune ├── iconv-lite@0.4.4
+122 silly idealTree:prePrune ├── inherits@2.0.1
+122 silly idealTree:prePrune ├── ipaddr.js@0.1.2
+122 silly idealTree:prePrune ├── isarray@0.0.1
+122 silly idealTree:prePrune ├── kerberos@0.0.3
+122 silly idealTree:prePrune ├── libbase64@0.1.0
+122 silly idealTree:prePrune ├─┬ libmime@1.2.0
+122 silly idealTree:prePrune │ └── iconv-lite@0.4.13
+122 silly idealTree:prePrune ├── libqp@1.1.0
+122 silly idealTree:prePrune ├── media-typer@0.2.0
+122 silly idealTree:prePrune ├── merge-descriptors@0.0.2
+122 silly idealTree:prePrune ├─┬ method-override@2.1.3
+122 silly idealTree:prePrune │ ├── parseurl@1.3.0
+122 silly idealTree:prePrune │ └── vary@1.0.1
+122 silly idealTree:prePrune ├── methods@1.1.0
+122 silly idealTree:prePrune ├── mime-types@1.0.2
+122 silly idealTree:prePrune ├── mime@1.2.11
+122 silly idealTree:prePrune ├── mongodb@1.3.19
+122 silly idealTree:prePrune ├─┬ mongoose@3.6.20
+122 silly idealTree:prePrune │ └── ms@0.1.0
+122 silly idealTree:prePrune ├── morgan@1.2.3
+122 silly idealTree:prePrune ├── mpath@0.1.1
+122 silly idealTree:prePrune ├─┬ mpromise@0.2.1
+122 silly idealTree:prePrune │ └── sliced@0.0.4
+122 silly idealTree:prePrune ├── ms@0.6.2
+122 silly idealTree:prePrune ├── muri@0.3.1
+122 silly idealTree:prePrune ├── mysql@2.9.0
+122 silly idealTree:prePrune ├─┬ needle@0.11.0
+122 silly idealTree:prePrune │ ├── debug@2.2.0
+122 silly idealTree:prePrune │ └── ms@0.7.1
+122 silly idealTree:prePrune ├── negotiator@0.4.7
+122 silly idealTree:prePrune ├── ng-admin@0.9.1
+122 silly idealTree:prePrune ├── nodemailer-direct-transport@1.1.0
+122 silly idealTree:prePrune ├── nodemailer-smtp-transport@1.0.4
+122 silly idealTree:prePrune ├── nodemailer-wellknown@0.1.7
+122 silly idealTree:prePrune ├─┬ on-finished@2.1.0
+122 silly idealTree:prePrune │ └── ee-first@1.0.5
+122 silly idealTree:prePrune ├── parseurl@1.2.0
+122 silly idealTree:prePrune ├── path-to-regexp@0.1.3
+122 silly idealTree:prePrune ├── proxy-addr@1.0.1
+122 silly idealTree:prePrune ├── qs@0.6.6
+122 silly idealTree:prePrune ├── range-parser@1.0.0
+122 silly idealTree:prePrune ├── raw-body@1.3.0
+122 silly idealTree:prePrune ├── readable-stream@1.1.13
+122 silly idealTree:prePrune ├── regexp-clone@0.0.1
+122 silly idealTree:prePrune ├── send@0.7.4
+122 silly idealTree:prePrune ├── serve-static@1.4.4
+122 silly idealTree:prePrune ├── sliced@0.0.5
+122 silly idealTree:prePrune ├── smtp-connection@1.3.1
+122 silly idealTree:prePrune ├── string_decoder@0.10.31
+122 silly idealTree:prePrune ├── type-is@1.3.2
+122 silly idealTree:prePrune ├── utils-merge@1.0.0
+122 silly idealTree:prePrune └── vary@0.1.0
+123 silly loadIdealTree Finishing
+124 silly currentTree node-todo@0.0.0
+124 silly currentTree ├── accepts@1.0.7
+124 silly currentTree ├── addressparser@0.3.2
+124 silly currentTree ├── basic-auth@1.0.0
+124 silly currentTree ├── bignumber.js@2.0.7
+124 silly currentTree ├── body-parser@1.5.2
+124 silly currentTree ├── bson@0.2.2
+124 silly currentTree ├── buffer-crc32@0.2.3
+124 silly currentTree ├── bytes@1.0.0
+124 silly currentTree ├── clone@1.0.2
+124 silly currentTree ├── cookie-signature@1.0.4
+124 silly currentTree ├── cookie@0.1.2
+124 silly currentTree ├── core-util-is@1.0.2
+124 silly currentTree ├── debug@1.0.4
+124 silly currentTree ├── depd@0.4.4
+124 silly currentTree ├── ee-first@1.0.3
+124 silly currentTree ├── escape-html@1.0.1
+124 silly currentTree ├── express@4.7.4
+124 silly currentTree ├── finalhandler@0.1.0
+124 silly currentTree ├── finished@1.2.2
+124 silly currentTree ├── fresh@0.2.2
+124 silly currentTree ├── hooks@0.2.1
+124 silly currentTree ├── iconv-lite@0.4.4
+124 silly currentTree ├── inherits@2.0.1
+124 silly currentTree ├── ipaddr.js@0.1.2
+124 silly currentTree ├── isarray@0.0.1
+124 silly currentTree ├── kerberos@0.0.3
+124 silly currentTree ├── libbase64@0.1.0
+124 silly currentTree ├─┬ libmime@1.2.0
+124 silly currentTree │ └── iconv-lite@0.4.13
+124 silly currentTree ├── libqp@1.1.0
+124 silly currentTree ├── media-typer@0.2.0
+124 silly currentTree ├── merge-descriptors@0.0.2
+124 silly currentTree ├─┬ method-override@2.1.3
+124 silly currentTree │ ├── parseurl@1.3.0
+124 silly currentTree │ └── vary@1.0.1
+124 silly currentTree ├── methods@1.1.0
+124 silly currentTree ├── mime-types@1.0.2
+124 silly currentTree ├── mime@1.2.11
+124 silly currentTree ├── mongodb@1.3.19
+124 silly currentTree ├─┬ mongoose@3.6.20
+124 silly currentTree │ └── ms@0.1.0
+124 silly currentTree ├── morgan@1.2.3
+124 silly currentTree ├── mpath@0.1.1
+124 silly currentTree ├─┬ mpromise@0.2.1
+124 silly currentTree │ └── sliced@0.0.4
+124 silly currentTree ├── ms@0.6.2
+124 silly currentTree ├── muri@0.3.1
+124 silly currentTree ├── mysql@2.9.0
+124 silly currentTree ├── negotiator@0.4.7
+124 silly currentTree ├── ng-admin@0.9.1
+124 silly currentTree ├── nodemailer-direct-transport@1.1.0
+124 silly currentTree ├── nodemailer-smtp-transport@1.0.4
+124 silly currentTree ├── nodemailer-wellknown@0.1.7
+124 silly currentTree ├─┬ on-finished@2.1.0
+124 silly currentTree │ └── ee-first@1.0.5
+124 silly currentTree ├── parseurl@1.2.0
+124 silly currentTree ├── path-to-regexp@0.1.3
+124 silly currentTree ├── proxy-addr@1.0.1
+124 silly currentTree ├── qs@0.6.6
+124 silly currentTree ├── range-parser@1.0.0
+124 silly currentTree ├── raw-body@1.3.0
+124 silly currentTree ├── readable-stream@1.1.13
+124 silly currentTree ├── regexp-clone@0.0.1
+124 silly currentTree ├── send@0.7.4
+124 silly currentTree ├── serve-static@1.4.4
+124 silly currentTree ├── sliced@0.0.5
+124 silly currentTree ├── smtp-connection@1.3.1
+124 silly currentTree ├── string_decoder@0.10.31
+124 silly currentTree ├── type-is@1.3.2
+124 silly currentTree ├── utils-merge@1.0.0
+124 silly currentTree └── vary@0.1.0
+125 silly idealTree node-todo@0.0.0
+125 silly idealTree ├── accepts@1.0.7
+125 silly idealTree ├── addressparser@0.3.2
+125 silly idealTree ├── basic-auth@1.0.0
+125 silly idealTree ├── bignumber.js@2.0.7
+125 silly idealTree ├── body-parser@1.5.2
+125 silly idealTree ├── bson@0.2.2
+125 silly idealTree ├── buffer-crc32@0.2.3
+125 silly idealTree ├── bytes@1.0.0
+125 silly idealTree ├── clone@1.0.2
+125 silly idealTree ├── cookie-signature@1.0.4
+125 silly idealTree ├── cookie@0.1.2
+125 silly idealTree ├── core-util-is@1.0.2
+125 silly idealTree ├── debug@1.0.4
+125 silly idealTree ├── depd@0.4.4
+125 silly idealTree ├── ee-first@1.0.3
+125 silly idealTree ├── escape-html@1.0.1
+125 silly idealTree ├── express@4.7.4
+125 silly idealTree ├── finalhandler@0.1.0
+125 silly idealTree ├── finished@1.2.2
+125 silly idealTree ├── fresh@0.2.2
+125 silly idealTree ├── hooks@0.2.1
+125 silly idealTree ├── iconv-lite@0.4.4
+125 silly idealTree ├── inherits@2.0.1
+125 silly idealTree ├── ipaddr.js@0.1.2
+125 silly idealTree ├── isarray@0.0.1
+125 silly idealTree ├── kerberos@0.0.3
+125 silly idealTree ├── libbase64@0.1.0
+125 silly idealTree ├─┬ libmime@1.2.0
+125 silly idealTree │ └── iconv-lite@0.4.13
+125 silly idealTree ├── libqp@1.1.0
+125 silly idealTree ├── media-typer@0.2.0
+125 silly idealTree ├── merge-descriptors@0.0.2
+125 silly idealTree ├─┬ method-override@2.1.3
+125 silly idealTree │ ├── parseurl@1.3.0
+125 silly idealTree │ └── vary@1.0.1
+125 silly idealTree ├── methods@1.1.0
+125 silly idealTree ├── mime-types@1.0.2
+125 silly idealTree ├── mime@1.2.11
+125 silly idealTree ├── mongodb@1.3.19
+125 silly idealTree ├─┬ mongoose@3.6.20
+125 silly idealTree │ └── ms@0.1.0
+125 silly idealTree ├── morgan@1.2.3
+125 silly idealTree ├── mpath@0.1.1
+125 silly idealTree ├─┬ mpromise@0.2.1
+125 silly idealTree │ └── sliced@0.0.4
+125 silly idealTree ├── ms@0.6.2
+125 silly idealTree ├── muri@0.3.1
+125 silly idealTree ├── mysql@2.9.0
+125 silly idealTree ├─┬ needle@0.11.0
+125 silly idealTree │ ├── debug@2.2.0
+125 silly idealTree │ └── ms@0.7.1
+125 silly idealTree ├── negotiator@0.4.7
+125 silly idealTree ├── ng-admin@0.9.1
+125 silly idealTree ├── nodemailer-direct-transport@1.1.0
+125 silly idealTree ├── nodemailer-smtp-transport@1.0.4
+125 silly idealTree ├── nodemailer-wellknown@0.1.7
+125 silly idealTree ├─┬ on-finished@2.1.0
+125 silly idealTree │ └── ee-first@1.0.5
+125 silly idealTree ├── parseurl@1.2.0
+125 silly idealTree ├── path-to-regexp@0.1.3
+125 silly idealTree ├── proxy-addr@1.0.1
+125 silly idealTree ├── qs@0.6.6
+125 silly idealTree ├── range-parser@1.0.0
+125 silly idealTree ├── raw-body@1.3.0
+125 silly idealTree ├── readable-stream@1.1.13
+125 silly idealTree ├── regexp-clone@0.0.1
+125 silly idealTree ├── send@0.7.4
+125 silly idealTree ├── serve-static@1.4.4
+125 silly idealTree ├── sliced@0.0.5
+125 silly idealTree ├── smtp-connection@1.3.1
+125 silly idealTree ├── string_decoder@0.10.31
+125 silly idealTree ├── type-is@1.3.2
+125 silly idealTree ├── utils-merge@1.0.0
+125 silly idealTree └── vary@0.1.0
+126 silly generateActionsToTake Starting
+127 silly install generateActionsToTake
+128 silly generateActionsToTake Finishing
+129 silly diffTrees action count 3
+130 silly diffTrees add ms@0.7.1
+131 silly diffTrees add debug@2.2.0
+132 silly diffTrees add needle@0.11.0
+133 silly decomposeActions action count 24
+134 silly decomposeActions fetch ms@0.7.1
+135 silly decomposeActions extract ms@0.7.1
+136 silly decomposeActions preinstall ms@0.7.1
+137 silly decomposeActions build ms@0.7.1
+138 silly decomposeActions install ms@0.7.1
+139 silly decomposeActions postinstall ms@0.7.1
+140 silly decomposeActions test ms@0.7.1
+141 silly decomposeActions finalize ms@0.7.1
+142 silly decomposeActions fetch debug@2.2.0
+143 silly decomposeActions extract debug@2.2.0
+144 silly decomposeActions preinstall debug@2.2.0
+145 silly decomposeActions build debug@2.2.0
+146 silly decomposeActions install debug@2.2.0
+147 silly decomposeActions postinstall debug@2.2.0
+148 silly decomposeActions test debug@2.2.0
+149 silly decomposeActions finalize debug@2.2.0
+150 silly decomposeActions fetch needle@0.11.0
+151 silly decomposeActions extract needle@0.11.0
+152 silly decomposeActions preinstall needle@0.11.0
+153 silly decomposeActions build needle@0.11.0
+154 silly decomposeActions install needle@0.11.0
+155 silly decomposeActions postinstall needle@0.11.0
+156 silly decomposeActions test needle@0.11.0
+157 silly decomposeActions finalize needle@0.11.0
+158 silly executeActions Starting
+159 silly install executeActions
+160 silly doSerial global-install 0
+161 silly doParallel fetch 3
+162 verbose lock using /home/vagrant/.npm/_locks/staging-621c400f6f4e4f10.lock for /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging
+163 silly doParallel extract 3
+164 silly extract ms
+165 silly extract debug
+166 silly extract needle
+167 verbose unbuild node_modules/.staging/ms-1e0e430296f019ff945b4ecab79abcd5
+168 verbose unbuild node_modules/.staging/debug-46d51a4ff73124cb55f515e71ba6b3c4
+169 verbose unbuild node_modules/.staging/needle-d762eb25f859f7bee118ab87ea9fc424
+170 silly gentlyRm /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/ms-1e0e430296f019ff945b4ecab79abcd5 is being purged from base /var/www/public/ChoreoProSite/WebSite/app
+171 silly gentlyRm /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/debug-46d51a4ff73124cb55f515e71ba6b3c4 is being purged from base /var/www/public/ChoreoProSite/WebSite/app
+172 verbose gentlyRm don't care about contents; nuking /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/ms-1e0e430296f019ff945b4ecab79abcd5
+173 verbose gentlyRm don't care about contents; nuking /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/debug-46d51a4ff73124cb55f515e71ba6b3c4
+174 silly gentlyRm /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/needle-d762eb25f859f7bee118ab87ea9fc424 is being purged from base /var/www/public/ChoreoProSite/WebSite/app
+175 verbose tar unpack /home/vagrant/.npm/ms/0.7.1/package.tgz
+176 verbose tar unpacking to /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/ms-1e0e430296f019ff945b4ecab79abcd5
+177 silly gentlyRm /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/ms-1e0e430296f019ff945b4ecab79abcd5 is being purged
+178 verbose tar unpack /home/vagrant/.npm/debug/2.2.0/package.tgz
+179 verbose tar unpacking to /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/debug-46d51a4ff73124cb55f515e71ba6b3c4
+180 silly gentlyRm /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/debug-46d51a4ff73124cb55f515e71ba6b3c4 is being purged
+181 verbose gentlyRm don't care about contents; nuking /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/needle-d762eb25f859f7bee118ab87ea9fc424
+182 verbose gentlyRm don't care about contents; nuking /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/ms-1e0e430296f019ff945b4ecab79abcd5
+183 verbose gentlyRm don't care about contents; nuking /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/debug-46d51a4ff73124cb55f515e71ba6b3c4
+184 verbose tar unpack /home/vagrant/.npm/needle/0.11.0/package.tgz
+185 verbose tar unpacking to /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/needle-d762eb25f859f7bee118ab87ea9fc424
+186 silly gentlyRm /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/needle-d762eb25f859f7bee118ab87ea9fc424 is being purged
+187 silly gunzTarPerm modes [ '775', '664' ]
+188 silly gunzTarPerm modes [ '775', '664' ]
+189 verbose gentlyRm don't care about contents; nuking /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/needle-d762eb25f859f7bee118ab87ea9fc424
+190 silly gunzTarPerm modes [ '775', '664' ]
+191 silly gunzTarPerm extractEntry package.json
+192 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+193 silly gunzTarPerm extractEntry package.json
+194 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+195 silly gunzTarPerm extractEntry package.json
+196 silly gunzTarPerm extractEntry .npmignore
+197 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+198 silly gunzTarPerm extractEntry README.md
+199 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+200 silly gunzTarPerm extractEntry .npmignore
+201 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+202 silly gunzTarPerm extractEntry node.js
+203 silly gunzTarPerm modified mode [ 'node.js', 420, 436 ]
+204 silly gunzTarPerm extractEntry .npmignore
+205 silly gunzTarPerm extractEntry README.md
+206 silly gunzTarPerm extractEntry LICENSE
+207 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+208 silly gunzTarPerm extractEntry index.js
+209 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+210 silly gunzTarPerm extractEntry debug.js
+211 silly gunzTarPerm modified mode [ 'debug.js', 420, 436 ]
+212 silly gunzTarPerm extractEntry browser.js
+213 silly gunzTarPerm modified mode [ 'browser.js', 420, 436 ]
+214 silly gunzTarPerm extractEntry timeout.js
+215 silly gunzTarPerm extractEntry History.md
+216 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+217 silly gunzTarPerm extractEntry Readme.md
+218 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+219 silly gunzTarPerm extractEntry bin/needle
+220 silly gunzTarPerm modified mode [ 'bin/needle', 493, 509 ]
+221 silly gunzTarPerm extractEntry examples/deflated-stream.js
+222 silly gunzTarPerm modified mode [ 'examples/deflated-stream.js', 420, 436 ]
+223 silly gunzTarPerm extractEntry bower.json
+224 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+225 silly gunzTarPerm extractEntry .jshintrc
+226 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+227 silly gunzTarPerm extractEntry examples/digest-auth.js
+228 silly gunzTarPerm extractEntry examples/download-to-file.js
+229 silly gunzTarPerm extractEntry component.json
+230 silly gunzTarPerm modified mode [ 'component.json', 420, 436 ]
+231 silly gunzTarPerm extractEntry Makefile
+232 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+233 silly gunzTarPerm extractEntry examples/multipart-stream.js
+234 silly gunzTarPerm extractEntry examples/parsed-stream.js
+235 silly gunzTarPerm extractEntry History.md
+236 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+237 silly gunzTarPerm extractEntry examples/parsed-stream2.js
+238 silly gunzTarPerm modified mode [ 'examples/parsed-stream2.js', 420, 436 ]
+239 silly gunzTarPerm extractEntry examples/stream-events.js
+240 silly gunzTarPerm modified mode [ 'examples/stream-events.js', 420, 436 ]
+241 silly gunzTarPerm extractEntry examples/stream-to-file.js
+242 silly gunzTarPerm modified mode [ 'examples/stream-to-file.js', 420, 436 ]
+243 silly gunzTarPerm extractEntry examples/upload-image.js
+244 silly gunzTarPerm extractEntry test/basic_auth_spec.js
+245 silly gunzTarPerm extractEntry test/decoder_spec.js
+246 silly gunzTarPerm extractEntry test/errors_spec.js
+247 silly gunzTarPerm extractEntry test/helpers.js
+248 silly gunzTarPerm extractEntry test/url_spec.js
+249 silly gunzTarPerm extractEntry test/cookies_spec.js
+250 silly gunzTarPerm extractEntry test/parsing_spec.js
+251 silly gunzTarPerm extractEntry test/proxy_spec.js
+252 silly gunzTarPerm extractEntry test/querystring_spec.js
+253 silly gunzTarPerm extractEntry test/redirect_spec.js
+254 silly gunzTarPerm extractEntry test/stream_spec.js
+255 silly gunzTarPerm extractEntry test/compression_spec.js
+256 silly gunzTarPerm modified mode [ 'test/compression_spec.js', 420, 436 ]
+257 silly gunzTarPerm extractEntry test/output_spec.js
+258 silly gunzTarPerm extractEntry test/keys/ssl.cert
+259 silly gunzTarPerm extractEntry test/keys/ssl.key
+260 silly gunzTarPerm extractEntry test/utils/formidable.js
+261 silly gunzTarPerm extractEntry test/utils/proxy.js
+262 silly gunzTarPerm extractEntry test/utils/test.js
+263 silly gunzTarPerm extractEntry README.md~
+264 silly gunzTarPerm extractEntry lib/auth.js
+265 silly gunzTarPerm extractEntry lib/cookies.js
+266 silly gunzTarPerm extractEntry lib/decoder.js
+267 silly gunzTarPerm extractEntry lib/multipart.js
+268 silly gunzTarPerm extractEntry lib/needle.js
+269 silly gunzTarPerm extractEntry lib/parsers.js
+270 silly gunzTarPerm extractEntry lib/querystring.js
+271 silly doParallel preinstall 3
+272 silly preinstall ms /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/ms-1e0e430296f019ff945b4ecab79abcd5
+273 info lifecycle ms@0.7.1~preinstall: ms@0.7.1
+274 silly preinstall debug /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/debug-46d51a4ff73124cb55f515e71ba6b3c4
+275 info lifecycle debug@2.2.0~preinstall: debug@2.2.0
+276 silly preinstall needle /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging/needle-d762eb25f859f7bee118ab87ea9fc424
+277 info lifecycle needle@0.11.0~preinstall: needle@0.11.0
+278 silly lifecycle debug@2.2.0~preinstall: no script for preinstall, continuing
+279 silly lifecycle ms@0.7.1~preinstall: no script for preinstall, continuing
+280 silly lifecycle needle@0.11.0~preinstall: no script for preinstall, continuing
+281 silly doReverseSerial remove 0
+282 silly doSerial move 0
+283 silly doSerial finalize 3
+284 silly finalize /var/www/public/ChoreoProSite/WebSite/app/node_modules/needle/node_modules/ms
+285 silly finalize /var/www/public/ChoreoProSite/WebSite/app/node_modules/needle/node_modules/debug
+286 silly finalize /var/www/public/ChoreoProSite/WebSite/app/node_modules/needle
+287 silly doSerial build 3
+288 silly build ms
+289 info linkStuff ms@0.7.1
+290 silly linkStuff ms@0.7.1 has /var/www/public/ChoreoProSite/WebSite/app/node_modules/needle/node_modules as its parent node_modules
+291 verbose linkBins ms@0.7.1
+292 verbose linkMans ms@0.7.1
+293 verbose rebuildBundles ms@0.7.1
+294 silly build debug
+295 info linkStuff debug@2.2.0
+296 silly linkStuff debug@2.2.0 has /var/www/public/ChoreoProSite/WebSite/app/node_modules/needle/node_modules as its parent node_modules
+297 verbose linkBins debug@2.2.0
+298 verbose linkMans debug@2.2.0
+299 verbose rebuildBundles debug@2.2.0
+300 silly build needle
+301 info linkStuff needle@0.11.0
+302 silly linkStuff needle@0.11.0 has /var/www/public/ChoreoProSite/WebSite/app/node_modules as its parent node_modules
+303 verbose linkBins needle@0.11.0
+304 verbose link bins [ { needle: './bin/needle' },
+304 verbose link bins   '/var/www/public/ChoreoProSite/WebSite/app/node_modules/.bin',
+304 verbose link bins   false ]
+305 verbose linkMans needle@0.11.0
+306 verbose rebuildBundles needle@0.11.0
+307 verbose rebuildBundles [ 'debug', 'ms' ]
+308 verbose rebuild bundle /var/www/public/ChoreoProSite/WebSite/app/node_modules/needle/node_modules/ms
+309 info build /var/www/public/ChoreoProSite/WebSite/app/node_modules/needle/node_modules/ms
+310 silly gentlyRm /var/www/public/ChoreoProSite/WebSite/app/node_modules/.bin/needle is being purged
+311 verbose gentlyRm don't care about contents; nuking /var/www/public/ChoreoProSite/WebSite/app/node_modules/.bin/needle
+312 info lifecycle ms@0.7.1~preinstall: ms@0.7.1
+313 silly lifecycle ms@0.7.1~preinstall: no script for preinstall, continuing
+314 info linkStuff ms@0.7.1
+315 silly linkStuff ms@0.7.1 has /var/www/public/ChoreoProSite/WebSite/app/node_modules/needle/node_modules as its parent node_modules
+316 verbose linkBins ms@0.7.1
+317 verbose linkMans ms@0.7.1
+318 verbose rebuildBundles ms@0.7.1
+319 info lifecycle ms@0.7.1~install: ms@0.7.1
+320 silly lifecycle ms@0.7.1~install: no script for install, continuing
+321 info lifecycle ms@0.7.1~postinstall: ms@0.7.1
+322 silly lifecycle ms@0.7.1~postinstall: no script for postinstall, continuing
+323 verbose unlock done using /home/vagrant/.npm/_locks/staging-621c400f6f4e4f10.lock for /var/www/public/ChoreoProSite/WebSite/app/node_modules/.staging
+324 silly rollbackFailedOptional Starting
+325 silly rollbackFailedOptional Finishing
+326 silly runTopLevelLifecycles Starting
+327 silly runTopLevelLifecycles Finishing
+328 silly install printInstalled
+329 warn EPACKAGEJSON node-todo@0.0.0 No repository field.
+330 warn EPACKAGEJSON node-todo@0.0.0 No license field.
+331 verbose stack Error: EPROTO: protocol error, symlink '../needle/bin/needle' -> '/var/www/public/ChoreoProSite/WebSite/app/node_modules/.bin/needle'
+331 verbose stack     at Error (native)
+332 verbose cwd /var/www/public/ChoreoProSite/WebSite/app
+333 error Linux 3.13.0-55-generic
+334 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "needle"
+335 error node v5.0.0
+336 error npm  v3.3.6
+337 error path ../needle/bin/needle
+338 error code EPROTO
+339 error errno -71
+340 error syscall symlink
+341 error EPROTO: protocol error, symlink '../needle/bin/needle' -> '/var/www/public/ChoreoProSite/WebSite/app/node_modules/.bin/needle'
+342 error If you need help, you may report this error at:
+342 error     <https://github.com/npm/npm/issues>
+343 verbose exit [ -71, true ]

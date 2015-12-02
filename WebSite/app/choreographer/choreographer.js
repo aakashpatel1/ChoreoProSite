@@ -4,16 +4,19 @@ angular.module('myApp.choreographer', ['ngRoute'])
   $routeProvider.when('/choreographer', {
     templateUrl: 'choreographer/choreographer.html',
     controller: 'choreographerCtrl'
+
   });
 }])
-.factory('choreographerService', function($resource) {
-    return $resource('http://localhost:5000/choreographer/api/v1.0/choreographers');
-})
-.controller('choreographerCtrl', function($scope, choreographerService) {
-        var choreographers = choreographerService.query(function() {
-            console.log(choreographers);
-        }); //query() returns all the entries
-    });
-
-
+.controller('choreographerCtrl', function($scope, $http) {
+    $http.get("http://192.168.0.132:8080/choreographers",  {
+        headers: {  'Access-Control-Allow-Headers': 'Content-Type',
+                    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+                    'Access-Control-Allow-Origin': '*'
+                 }
+    })
+        .success(function (response) {
+            $scope.choreographers = response;
+            console.log(response);
+        });
+});
 

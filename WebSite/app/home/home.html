@@ -10,13 +10,13 @@
 
 <div class = "row">
 	<div class = "col-md-5">
-		<img src="assets/images/tiffanyFettinger.jpg" class = "img-responsive" width = "300px" height="100px" alt = "">
-	</div> 
-	<div class = "col-md-7">
-		<h3>Tiffany Fettinger</h3>
-		<p>Founder of the company, Tiffany Fettinger, started what she did in order to add a level of professionalism to the cheerleading industry and to simplify the choreography booking experience for the client and the choreographer</p>
+		<img ng-src={{imageSource}} class = "img-responsive" width = "300px" height="100px" alt = "">
 	</div>
-</div> 
+	<div class = "col-md-7">
+		<h3>{{title}}</h3>
+		<p>{{text}}</p>
+	</div>
+</div>
 
 <hr></hr>
 
@@ -24,21 +24,21 @@
 	<div class = "col-md-4">
 		<div class = "panel panel-default text-center">
 			<div class = "panel-body">
-				<p>I love ChoreoPro becasue it has mmade my experience so much easier. Tiffany has allowed my gym and i to book top notch choreographers at ease and it is most definitely a load off of our backs.</p>
+				<p>{{testimonialOne}}</p>
 			</div>
 		</div>
 	</div>
 	<div class = "col-md-4">
 		<div class = "panel panel-default text-center">
 			<div class = "panel-body">
-				<p>I love ChoreoPro becasue...</p>
+				<p>{{testimonialTwo}}</p>
 			</div>
 		</div>
 	</div>
 	<div class = "col-md-4">
 		<div class = "panel panel-default text-center">
 			<div class = "panel-body">
-				<p>I love ChoreoPro becasue... -Janie Pascoe</p>
+				<p>{{testimonialThree}}</p>
 			</div>
 		</div>
 	</div>
