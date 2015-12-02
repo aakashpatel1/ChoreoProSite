@@ -10,7 +10,7 @@ angular.module('myApp.contact', ['ngRoute'])
     }])
 
     .controller('contactCtrl', function($scope, $http) {
-        $http.get("http://192.168.0.132:8080/pageElements/1",  {
+        $http.get("http://192.168.0.132:8080/attributesByPage/1",  {
             headers: {  'Access-Control-Allow-Headers': 'Content-Type',
                 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
                 'Access-Control-Allow-Origin': '*'

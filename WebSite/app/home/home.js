@@ -9,7 +9,7 @@ angular.module('myApp.home', ['ngRoute'])
 
 
 .controller('homeCtrl', function($scope, $http) {
-        $http.get("http://192.168.0.132:8080/pageElements/2",  {
+        $http.get("http://192.168.0.132:8080/attributesByPage/2",  {
             headers: {  'Access-Control-Allow-Headers': 'Content-Type',
                 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
                 'Access-Control-Allow-Origin': '*'

@@ -64,7 +64,7 @@ var choreographersData = {
         {
             "id": 0,
             "name": "Dahlston Delgado",
-            "bio":  " This is a test Starred on Broadway in Bring it On. A national chapmpion choreographer with many all-star teams along with UTA, Sam Houston State, Houston, and many local Dallas area high schools. He choreographs all around the country with his unique and innovative style that cannot be duplicated.",
+            "bio":  "Starred on Broadway in Bring it On. A national chapmpion choreographer with many all-star teams along with UTA, Sam Houston State, Houston, and many local Dallas area high schools. He choreographs all around the country with his unique and innovative style that cannot be duplicated.",
             "imageSource":"assets/images/dahlstonDelgado.jpg",
             "prices": [
                 {"Level 1" : 1000},
@@ -452,69 +452,15 @@ app.put('/pageAttributes/:id', function(req,res) {
     res.json({"update": "True"});
 });
 
-app.put('/pages/editHomePage', function(req,res) {
-    if (req.body.title) {
-        con.query('UPDATE ChoreoPro.PageAttribute SET AttributeText = ? Where AttributeID = ?',
-            [req.body.title, 4],
-            function (err, result) {
-                if (err) throw err;
+app.get('/attributesByPage/:id', function(req,res){
+    con.query('SELECT * FROM ChoreoPro.PageAttribute WHERE PageID = ?', req.params.id,
+        function (err, result) {
+            if (err) throw err;
+            console.log(result);
+            res.json(result);
+        }
+    );
 
-                console.log('Changed ' + result.changedRows + ' rows');
-            }
-        );
-    }
-    if (req.body.text) {
-        con.query('UPDATE ChoreoPro.PageAttribute SET AttributeText = ? Where AttributeID = ?',
-            [req.body.text, 5],
-            function (err, result) {
-                if (err) throw err;
-
-                console.log('Changed ' + result.changedRows + ' rows');
-            }
-        );
-    }
-    if (req.body.imageSource) {
-        con.query('UPDATE ChoreoPro.PageAttribute SET AttributeText = ? Where AttributeID = ?',
-            [req.body.imageSource, 6],
-            function (err, result) {
-                if (err) throw err;
-
-                console.log('Changed ' + result.changedRows + ' rows');
-            }
-        );
-    }
-    if (req.body.testimonialOne) {
-        con.query('UPDATE ChoreoPro.PageAttribute SET AttributeText = ? Where AttributeID = ?',
-            [req.body.testimonialOne, 7],
-            function (err, result) {
-                if (err) throw err;
-
-                console.log('Changed ' + result.changedRows + ' rows');
-            }
-        );
-    }
-    if (req.body.testimonialTwo) {
-        con.query('UPDATE ChoreoPro.PageAttribute SET AttributeText = ? Where AttributeID = ?',
-            [req.body.testimonialTwo, 8],
-            function (err, result) {
-                if (err) throw err;
-
-                console.log('Changed ' + result.changedRows + ' rows');
-            }
-        );
-    }
-    if (req.body.testimonialThree) {
-        con.query('UPDATE ChoreoPro.PageAttribute SET AttributeText = ? Where AttributeID = ?',
-            [req.body.testimonialThree, 9],
-            function (err, result) {
-                if (err) throw err;
-
-                console.log('Changed ' + result.changedRows + ' rows');
-            }
-        );
-    }
-    console.log({"update": "True"});
-    res.json({"update": "True"});
 });
 
 app.get('/schedule',function(req,res){
