@@ -25,12 +25,12 @@
 }
 #cssmenu {
   width: auto;
-  border-bottom: 3px solid #0058B3;
+  border-bottom: 3px solid #0058b3;
   font-family: Raleway, sans-serif;
   line-height: 1;
 }
 #cssmenu ul {
-  background: #0058B3;
+  background: #0058b3;
 }
 #cssmenu > ul > li {
   float: left;
@@ -67,7 +67,7 @@
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
-  color: #0058B3;
+  color: #0058b3;
 }
 #cssmenu > ul > li > a:after {
   position: absolute;
